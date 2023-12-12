@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '8000-melhefnawi-perfume-palac-g8bl65uavw.us2.codeanyapp.com',"perfumepalace.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = [ '8000-melhefnawi-perfume-palac-g8bl65uavw.us2.codeanyapp.com',"perfumepalace.herokuapp.com", "localhost",'perfumepalace-85931537055e.herokuapp.com']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
