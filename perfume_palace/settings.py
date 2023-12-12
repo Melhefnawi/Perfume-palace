@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
-from pathlib import Path
 import os
+from pathlib import Path
+
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-melhefnawi-perfume-palac-g8bl65uavw.us2.codeanyapp.com','perfumepalace.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['8000-melhefnawi-perfume-palac-g8bl65uavw.us2.codeanyapp.com', "perfumepalace.herokuapp.com", 'localhost']
 
 
 # Application definition
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
