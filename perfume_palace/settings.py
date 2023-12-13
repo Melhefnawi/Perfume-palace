@@ -47,8 +47,9 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    
-   
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'perfume_palace',
 ]
 
@@ -91,6 +92,16 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+AUTHENTICATION_BACKENDS = [
+    
+    
+    'django.contrib.auth.backends.ModelBackend',
+
+   
+    'allauth.account.auth_backends.AuthenticationBackend',
+    
 ]
 
 WSGI_APPLICATION = 'perfume_palace.wsgi.application'
