@@ -29,12 +29,16 @@
     {% block extra_corejs %}
     {% endblock %}
 
-    <title>Perfume Palace</title>
+    <title>Perfume Palace{% block extra_tittle %}{% endblock %}</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="container-fluid fixed-top"></header>
 
+    {% if messages %}
+
+    <div class="message-container"></div>
     
+    {% endif %}
     
   </body>
 </html>
