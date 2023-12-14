@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'perfume_palace',
+    'home',
 ]
 
 SITE_ID = 1
@@ -89,7 +90,10 @@ ROOT_URLCONF = 'perfume_palace.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth')        
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
