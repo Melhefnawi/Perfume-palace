@@ -4,6 +4,11 @@ from django.db import models
 
 
 class Category(models.Model):
+
+    class Meta:
+
+        verbose_name_plural:'Caterories'
+        
     name = models.CharField(max_length=254)
     
 
