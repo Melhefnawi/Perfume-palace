@@ -5,7 +5,8 @@ from django.db import models
 
 class Category(models.Model):
 
-    
+    Men = models.CharField(max_length=254, null=True)
+    Women = models.CharField(max_length=254, null=True)
 
     class Meta:
        verbose_name_plural = 'Categories'
