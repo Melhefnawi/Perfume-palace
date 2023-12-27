@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+    'crispy_forms',
 ]
 
 SITE_ID = 1
@@ -89,6 +90,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'perfume_palace.urls'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
