@@ -84,18 +84,15 @@ Store owners/admins can administer the site from the user interface, they have t
 - As a Site User I would like to contact the site administrator so that I can query/recommend the site admin on different topics, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/16).
 - As a Site User I would like to subscribe to a newsletter so that I can receive news, special offers and general information related to the store, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/17).
 - As a Site User I would like to navigate to the site's about us, terms & conditions and privacy policy links so that I can inform myself in more depth about the site, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/19).
-- As a Site User I would like to receive an email every time a new game is added to the store so that I will be up to date with what games are available, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/20).
+- As a Site User I would like to receive an email every time a new perfume is added to the store so that I will be up to date with what perfumes are available, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/20).
 
 ### Site Admin
 
-- As a site administrator, I should be able to create/add, read, update and delete games so that I can manage the games on the site, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/2).
-- As a site administrator, I should be able to add, update and delete pegi ratings so that I can assign pegi ratings to games, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/4).
-- As a site administrator, I should be able to add, update and delete platforms so that I can assign platforms to games, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/5).
-- As a site administrator/site owner, I should be able to add/edit/delete games from the website so that I can manage new games, games updates or games that are no longer available, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/15).
+- As a site administrator, I should be able to create/add, read, update and delete perfume so that I can manage the perfumes on the site, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/2).
+- As a site administrator, I should be able to add, update and delete  ratings so that I can assign ratings to perfumes, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/4).
+- As a site administrator, I should be able to add, update and delete platforms so that I can assign platforms to perfumes, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/5).
+- As a site administrator/site owner, I should be able to add/edit/delete perfumes from the website so that I can manage new perfumes, perfumes updates or perfumes that are no longer available, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/15).
 
-### Product Owner
-
-- As a product owner, I should be able to run automated tests, so that I can make sure everything is working as it should, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/18)
 
 ## Wireframes
 
