@@ -1,1 +1,1 @@
-web: gunicorn perfume_palace.wsgi
+web: gunicorn perfume_palace.wsgi:application
