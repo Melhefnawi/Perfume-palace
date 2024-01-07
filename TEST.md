@@ -41,19 +41,11 @@ I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to 
 
 ![screenshot](media/base-py-test-profile.JPG)
 
+#### bag view.py
 
-![screenshot](media/base-py-test3.JPG)
+![screenshot](media/base-py-test-bag.JPG)
 
 
-## Browser Compatibility
-
-I've tested my deployed project on multiple browsers to check for compatibility issues.
-
-| Browser | Screenshot | Notes |
-| --- | --- | --- |
-| Chrome | ![screenshot](documentation/chrome-test.png) | Works as expected |
-| Edge | ![screenshot](documentation/edge-test.png) | Works as expected |
-| Firefox | ![screenshot](documentation/firefox-test.png) | Works as expected |
 
 ## Responsiveness
 
