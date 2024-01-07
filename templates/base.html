@@ -3,9 +3,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<<<<<<< HEAD
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="utf-8" />
+=======
+    <meta charset="utf-8" />
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+>>>>>>> aa980e31da63fe9ddde3c4cc36789dfae0d9a7c7
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -103,9 +110,14 @@
                 class="dropdown-menu border-0"
                 aria-labelledby="user-options"
               >
+<<<<<<< HEAD
                 {% if request.user.is_authenticated %}
                 <!--Prevent tag breaking -->
                 {% if request.user.is_superuser %}
+=======
+                {% if request.user.is_authenticated %} {% if
+                request.user.is_superuser %}
+>>>>>>> aa980e31da63fe9ddde3c4cc36789dfae0d9a7c7
                 <a href="{% url 'add_product' %}" class="dropdown-item"
                   >Product Management</a
                 >
@@ -134,12 +146,17 @@
                 <div class="text-center">
                   <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                   <p class="my-0">
+<<<<<<< HEAD
                     {% if grand_total %} ${{ grand_total|floatformat:2 }}
                     <!-- Fix broken tag -->
 
                     <! -- Fix broken tag -->
 
                     {% else %} $0.00 {% endif %}
+=======
+                    {% if grand_total %} ${{ grand_total|floatformat:2 }} {%
+                    else %} $0.00 {% endif %}
+>>>>>>> aa980e31da63fe9ddde3c4cc36789dfae0d9a7c7
                   </p>
                 </div>
               </a>
@@ -159,6 +176,7 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
+<<<<<<< HEAD
 
             <!-- Fix broken tag -->
           </button>
@@ -172,6 +190,11 @@
           <!-- Fix broken tag -->
 
           {% include 'includes/main-nav.html' %}
+=======
+          </button>
+          {% include 'includes/mobile-top-header.html' %} {% include
+          'includes/main-nav.html' %}
+>>>>>>> aa980e31da63fe9ddde3c4cc36789dfae0d9a7c7
         </nav>
       </div>
       <div id="delivery-banner" class="row text-center">
@@ -185,6 +208,7 @@
 
     {% if messages %}
     <div class="message-container">
+<<<<<<< HEAD
       {% for message in messages %} {% with message.level as level %}
       <!-- Fix broken tag -->
       {% if level == 40 %} {% include 'includes/toasts/toast_error.html' %}
@@ -200,6 +224,17 @@
     {% endif %} {% block page_header %} {% endblock %} {% block content %}
     <!-- Fix broken tag -->
     {% endblock %} {% block postloadjs %}
+=======
+      {% for message in messages %} {% with message.level as level %} {% if
+      level == 40 %} {% include 'includes/toasts/toast_error.html' %} {% elif
+      level == 30 %} {% include 'includes/toasts/toast_warning.html' %} {% elif
+      level == 25 %} {% include 'includes/toasts/toast_success.html' %} {% else
+      %} {% include 'includes/toasts/toast_info.html' %} {% endif %} {% endwith
+      %} {% endfor %}
+    </div>
+    {% endif %} {% block page_header %} {% endblock %} {% block content %} {%
+    endblock %} {% block postloadjs %}
+>>>>>>> aa980e31da63fe9ddde3c4cc36789dfae0d9a7c7
     <script type="text/javascript">
       $(".toast").toast("show");
     </script>
