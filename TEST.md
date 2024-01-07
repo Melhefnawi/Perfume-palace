@@ -29,7 +29,21 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-![screenshot](media/test-py-test.jpg)
+#### Checkout view.py
+
+![screenshot](media/base-py-test.JPG)
+
+#### product view.py
+
+![screenshot](media/base-py-test-product.JPG)
+
+#### profile view.py
+
+![screenshot](media/base-py-test-profile.JPG)
+
+
+![screenshot](media/base-py-test3.JPG)
+
 
 ## Browser Compatibility
 
