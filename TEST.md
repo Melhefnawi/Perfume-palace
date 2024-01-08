@@ -51,14 +51,20 @@ I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to 
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Screenshot | Notes |
-| --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Desktop (DevTools) | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl.png) | Works as expected |
-| 4K Monitor | ![screenshot](documentation/responsive-4k.png) | Works as expected |
-| Samsung Galaxy A52s (my own phone) | ![screenshot](documentation/responsive-own-phone.png) | Works as expected |
+
+ #### Mobile (DevTools)  
+ 
+ ![screenshot](documentation/responsive-mobile.png)  Works as expected 
+ 
+ #### Tablet (DevTools) 
+ 
+ ![screenshot](documentation/responsive-tablet.png)Works as expected 
+ 
+#### Desktop (DevTools) 
+
+![screenshot](documentation/responsive-desktop.png)  
+
+
 
 ## Lighthouse Audit
 
