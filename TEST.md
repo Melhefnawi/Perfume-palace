@@ -70,26 +70,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-| Page | Mobile | Desktop | Notes |
-| --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-test-home-mobile.png) | ![screenshot](documentation/lighthouse-test-home-desktop.png) | Few warnings on mobile |
-| About Us | ![screenshot](documentation/lighthouse-test-about-us-mobile.png) | ![screenshot](documentation/lighthouse-test-about-us-desktop.png) | Few warnings on mobile |
-| Newsletter | ![screenshot](documentation/lighthouse-test-newsletter-mobile.png) | ![screenshot](documentation/lighthouse-test-newsletter-desktop.png) | Few warnings on mobile |
-| Contact Us | ![screenshot](documentation/lighthouse-test-contact-us-mobile.png) | ![screenshot](documentation/lighthouse-test-contact-us-desktop.png) | Few warnings on mobile |
-| Contact List | ![screenshot](documentation/lighthouse-test-contact-list-mobile.png) | ![screenshot](documentation/lighthouse-test-contact-list-desktop.png) | Few warnings on mobile |
-| Games | ![screenshot](documentation/lighthouse-test-games-mobile.png) | ![screenshot](documentation/lighthouse-test-games-desktop.png) | Slow response time due to amount of images, few warnings |
-| Game Detail | ![screenshot](documentation/lighthouse-test-game-detail-mobile.png) | ![screenshot](documentation/lighthouse-test-game-detail-desktop.png) | few warnings on mobile |
-| Add Game | ![screenshot](documentation/lighthouse-test-add-game-mobile.png) | ![screenshot](documentation/lighthouse-test-add-game-desktop.png) | few warnings on mobile |
-| Edit Game | ![screenshot](documentation/lighthouse-test-edit-game-mobile.png) | ![screenshot](documentation/lighthouse-test-edit-game-desktop.png) | few warnings on mobile and some minor warnings on desktop due to aspect ratio on game image |
-| Delete Game | ![screenshot](documentation/lighthouse-test-delete-game-mobile.png) | ![screenshot](documentation/lighthouse-test-delete-game-desktop.png) | few warnings on mobile |
-| Shopping Basket | ![screenshot](documentation/lighthouse-test-basket-mobile.png) | ![screenshot](documentation/lighthouse-test-basket-desktop.png) | few warnings on mobile |
-| Register | ![screenshot](documentation/lighthouse-test-register-mobile.png) | ![screenshot](documentation/lighthouse-test-register-desktop.png) | few warnings on mobile |
-| Login | ![screenshot](documentation/lighthouse-test-login-mobile.png) | ![screenshot](documentation/lighthouse-test-login-desktop.png) | few warnings on mobile |
-| Logout | ![screenshot](documentation/lighthouse-test-logout-mobile.png) | ![screenshot](documentation/lighthouse-test-logout-desktop.png) | few warnings on mobile |
-| Checkout | ![screenshot](documentation/lighthouse-test-checkout-mobile.png) | ![screenshot](documentation/lighthouse-test-checkout-desktop.png) | few warnings on mobile |
-| Checkout Success | ![screenshot](documentation/lighthouse-test-checkout-success-mobile.png) | ![screenshot](documentation/lighthouse-test-checkout-success-desktop.png) | few warnings on mobile |
-| Profile | ![screenshot](documentation/lighthouse-test-profile-mobile.png) | ![screenshot](documentation/lighthouse-test-profile-desktop.png) | few warnings on mobile |
-| Order History | ![screenshot](documentation/lighthouse-test-order-history-mobile.png) | ![screenshot](documentation/lighthouse-test-order-history-desktop.png) | few warnings on mobile |
 
 ## Defensive Programming
 
@@ -153,11 +133,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Display Contact list | All users and their information (including messages) that have contacted the site admin will be displayed | Pass | |
 | | Brute forcing the URL to get to Contact list page without logging in first | User will be redirected to Login page | Pass | |
 | | Brute forcing the URL to get to Contact list page logged in not as a Superuser | User will be redirected to Home page and an error will show at the top of the page to indicate the user that only store owners can do that | Pass | If user is not logged in, they will be redirected to login page |
-| Newsletter Page | | | | |
-| | Click on Newsletter link in home page bottom | Redirection to Newsletter page | Pass | |
-| | Newsletter page will load a form for the user to fill out | Newsletter form, loads as expected | Pass | Should the user be logged in, the name and email address fields in the form will be prefilled with the user's information |
-| | Click on the Subscribe button without requiered form values | An error will show on the form to indicate the user what's missing | Pass | |
-| | Click on the Subscribe button | Sends the user's info to the Newsletter database table | Pass | A message will show at the top of the page to thank the user for subscribing to the newsletter |
+
 | Register | | | | |
 | | Click on Register link in navbar, | Redirection to Register page | Pass | |
 | | Enter valid first name | Field will accept free text format | Pass | |
