@@ -1,37 +1,57 @@
 # Table of Contents
 
-1. [Gamesground Store](#gamesground-store)
-2. [UX](#ux)
-   - [Colour Scheme](#colour-scheme)
-   - [Typography](#typography)
-3. [User Stories](#user-stories)
-   - [Site Users](#site-users)
-   - [Site Admin](#site-admin)
-   - [Product Owner](#product-owner)
-4. [Wireframes](#wireframes)
-   - [Pages Wireframes](#pages-wireframes)
-5. [Features](#features)
-   - [Existing Features](#existing-features)
-   - [Future Features](#future-features)
-6. [Tools & Technologies Used](#tools--technologies-used)
-7. [Database Design](#database-design)
-8. [Agile Development Process](#agile-development-process)
-   - [GitHub Projects](#github-projects)
-   - [GitHub Issues](#github-issues)
-   - [MoSCoW Prioritization](#moscow-prioritization)
-9. [Ecommerce Business Model](#ecommerce-business-model)
-10. [Search Engine Optimization (SEO) & Social Media Marketing](#search-engine-optimization-seo--social-media-marketing)
+
+- [Table of Contents](#table-of-contents)
+  - [Perfume Palace Store](#perfume-palace-store)
+  - [User Stories](#user-stories)
+    - [Site Users](#site-users)
+    - [Site Admin](#site-admin)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+  - [Tools \& Technologies Used](#tools--technologies-used)
+  - [Database Design](#database-design)
+    - [Home](#home)
+    - [Games](#games)
+    - [Checkout](#checkout)
+    - [Profiles](#profiles)
+    - [Graphviz ERD](#graphviz-erd)
+  - [Agile Development Process](#agile-development-process)
+    - [GitHub Projects](#github-projects)
+      - [Project Iteration 1 board](#project-iteration-1-board)
+      - [Project Iteration 2 board](#project-iteration-2-board)
+      - [Project Iteration 3 board](#project-iteration-3-board)
+      - [Project Iteration 4 board](#project-iteration-4-board)
+      - [Project Iteration 5 board](#project-iteration-5-board)
+      - [Project Iteration 6 board](#project-iteration-6-board)
+      - [Project Iteration 7 board](#project-iteration-7-board)
+    - [GitHub Issues](#github-issues)
+    - [MoSCoW Prioritization](#moscow-prioritization)
+  - [Ecommerce Business Model](#ecommerce-business-model)
+  - [Search Engine Optimization (SEO) \& Social Media Marketing](#search-engine-optimization-seo--social-media-marketing)
     - [Keywords](#keywords)
     - [Sitemap](#sitemap)
     - [Robots](#robots)
     - [Social Media Marketing](#social-media-marketing)
     - [Newsletter Marketing](#newsletter-marketing)
-11. [Testing](#testing)
-12. [Deployment](#deployment)
-13. [Credits](#credits)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+    - [ElephantSQL Database](#elephantsql-database)
+    - [Amazon AWS](#amazon-aws)
+      - [S3 Bucket](#s3-bucket)
+      - [IAM](#iam)
+      - [Final AWS Setup](#final-aws-setup)
+    - [Stripe API](#stripe-api)
+    - [Gmail API](#gmail-api)
+    - [Heroku Deployment](#heroku-deployment)
+    - [Local Deployment](#local-deployment)
+      - [Cloning](#cloning)
+      - [Forking](#forking)
+    - [Local VS Deployment](#local-vs-deployment)
+  - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
-14. [Acknowledgements](#acknowledgements)
+    - [Acknowledgements](#acknowledgements)
 
 ## Perfume Palace Store
 
@@ -43,77 +63,33 @@ Store owners/admins can administer the site from the user interface, they have t
 
 ![screenshot](documentation/am-i-responsive.png)
 
-## UX
-
-### Colour Scheme
-
-- To select the colors, I used the [ColorSpace](https://mycolor.space/) website which provides the option to input any color you want and then it will provide a selection of matching/compatible colors that relate well to that "base" color you selected in the first place.
-- Once I had my base color selected which is [#000000](https://mycolor.space/?hex=%23000000&sub=1), I used ColorSpace and it gave me a wide variety of compatible colors to work with from which I chose several of them and referenced them accordingly in the css style sheet.
-
-![Colors](documentation/color-selection.png)
-
-### Typography
-
-- Since the google fonts page feature for fonts pairing suggestions was discontinued, I used an alternative tool available to select the fonts for the site.
-- I browsed [heyreliable](https://heyreliable.com/ultimate-google-font-pairings/) google fonts pairings available in their collection and selected number 35 based on the look and mood wanted for the site.
-
-![Fonts](documentation/fonts-selection.png)
-
-- These fonts are clear to read, they have a friendly yet professional style which is compatible with a video games store website.
-
-* [Catamaran](https://fonts.google.com/specimen/Catamaran) was used for the primary headers and titles.
-
-* [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans) was used for all other secondary text.
-
-* [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer, contact link, newsletter link, among others.
 
 ## User Stories
 
 ### Site Users
 
-- As a Site User I would like to register for an account so that I can login and out with personal account and recover my password in case I forget it, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/1).
-- As a Site User I would like to view a list of perfumes so that I can select one or more to purchase, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/6).
-- As a Site User I would like to view an individual perfume so that I can identify its name, price, image, genre, description, year, platform and rating. [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/7).
-- As a Site User I would like to search for a specific perfume name so that I can easily find the perfume I want to purchase, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/8).
-- As a Site User I would like to sort perfume by price, description, name, and rating so that I can easily find the perfume according to my preferences, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/9).
-- As a Site User I would like to add, view, update and delete perfume in the shopping basket so that I can manage/review my shopping basket before proceeding to checkout, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/10).
-- As a Site User I would like to easily view the total amount of perfumes in my shopping basket so that I can know how many perfumes are there in my basket at all times, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/11).
-- As a Site User I would like to provide the necessary billing/delivery details so that I can purchase perfume and view an order confirmation after checkout to verify all the information from my purchase is accurate, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/12).
-- As a Site User I would like to receive an email confirmation after my purchase so that I can keep records of my transactions, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/13).
-- As a Site User I would like to create/manage my personal account profile so that I can view/update my profile, view my order history and save my payment information, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/14).
-- As a Site User I would like to contact the site administrator so that I can query/recommend the site admin on different topics, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/16).
-- As a Site User I would like to subscribe to a newsletter so that I can receive news, special offers and general information related to the store, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/17).
-- As a Site User I would like to navigate to the site's about us, terms & conditions and privacy policy links so that I can inform myself in more depth about the site, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/19).
-- As a Site User I would like to receive an email every time a new perfume is added to the store so that I will be up to date with what perfumes are available, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/20).
-
+- As a Site User I would like to register for an account so that I can login and out with personal account and recover my password in case I forget it. 
+- As a Site User I would like to view a list of perfumes so that I can select one or more to purchase. 
+- As a Site User I would like to view an individual perfume so that I can identify its name, price, image, genre, description, year, platform and rating. 
+- As a Site User I would like to search for a specific perfume name so that I can easily find the perfume I want to purchase. 
+- As a Site User I would like to sort perfume by price, description, name, and rating so that I can easily find the perfume according to my preferences. 
+- As a Site User I would like to add, view, update and delete perfume in the shopping basket so that I can manage/review my shopping basket before proceeding to checkout. 
+- As a Site User I would like to easily view the total amount of perfumes in my shopping basket so that I can know how many perfumes are there in my basket at all times. 
+- As a Site User I would like to provide the necessary billing/delivery details so that I can purchase perfume and view an order confirmation after checkout to verify all the information from my purchase is accurate. 
+- As a Site User I would like to receive an email confirmation after my purchase so that I can keep records of my transactions. 
+- As a Site User I would like to create/manage my personal account profile so that I can view/update my profile, view my order history and save my payment information. 
+- As a Site User I would like to contact the site administrator so that I can query/recommend the site admin on different topics. 
+- As a Site User I would like to subscribe to a newsletter so that I can receive news, special offers and general information related to the store.
+- As a Site User I would like to navigate to the site's about us, terms & conditions and privacy policy links so that I can inform myself in more depth about the site. 
+- As a Site User I would like to receive an email every time a new perfume is added to the store so that I will be up to date with what perfumes are available. 
 ### Site Admin
 
-- As a site administrator, I should be able to create/add, read, update and delete perfume so that I can manage the perfumes on the site, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/2).
-- As a site administrator, I should be able to add, update and delete  ratings so that I can assign ratings to perfumes, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/4).
-- As a site administrator, I should be able to add, update and delete platforms so that I can assign platforms to perfumes, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/5).
-- As a site administrator/site owner, I should be able to add/edit/delete perfumes from the website so that I can manage new perfumes, perfumes updates or perfumes that are no longer available, [Link here](https://github.com/leonardo-simeone/gamesground-store/issues/15).
+- As a site administrator, I should be able to create/add, read, update and delete perfume so that I can manage the perfumes on the site, 
+- As a site administrator, I should be able to add, update and delete  ratings so that I can assign ratings to perfumes, 
+- As a site administrator, I should be able to add, update and delete platforms so that I can assign platforms to perfumes, 
+- As a site administrator/site owner, I should be able to add/edit/delete perfumes from the website so that I can manage new perfumes, perfumes updates or perfumes that are no longer available, 
 
 
-## Wireframes
-
-To wireframe the website I used [Whimsical](https://whimsical.com/wireframes).
-
-### Pages Wireframes
-
-| Page               | Screenshot                                                    |
-| ------------------ | ------------------------------------------------------------- |
-| All pages          | ![screenshot](documentation/wireframe-all.png)                |
-| Home               | ![screenshot](documentation/wireframe-home.png)               |
-| Games              | ![screenshot](documentation/wireframe-games.png)              |
-| Game detail        | ![screenshot](documentation/wireframe-game-detail.png)        |
-| Login/Register     | ![screenshot](documentation/wireframe-login-register.png)     |
-| About us           | ![screenshot](documentation/wireframe-about-us.png)           |
-| Add game           | ![screenshot](documentation/wireframe-add-game.png)           |
-| Edit game          | ![screenshot](documentation/wireframe-edit-game.png)          |
-| Basket             | ![screenshot](documentation/wireframe-basket.png)             |
-| Checkout           | ![screenshot](documentation/wireframe-checkout.png)           |
-| Checkout success   | ![screenshot](documentation/wireframe-checkout-success.png)   |
-| Contact/Newsletter | ![screenshot](documentation/wireframe-contact-newsletter.png) |
 
 ## Features
 
