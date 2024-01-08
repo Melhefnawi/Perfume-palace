@@ -133,7 +133,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Display Contact list | All users and their information (including messages) that have contacted the site admin will be displayed | Pass | |
 | | Brute forcing the URL to get to Contact list page without logging in first | User will be redirected to Login page | Pass | |
 | | Brute forcing the URL to get to Contact list page logged in not as a Superuser | User will be redirected to Home page and an error will show at the top of the page to indicate the user that only store owners can do that | Pass | If user is not logged in, they will be redirected to login page |
-
 | Register | | | | |
 | | Click on Register link in navbar, | Redirection to Register page | Pass | |
 | | Enter valid first name | Field will accept free text format | Pass | |
