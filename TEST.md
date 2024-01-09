@@ -89,7 +89,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on About Us page external links | External links open in new page | Pass |
 | | Click on the Cancel link in the Contact us page | Redirection to All Games page showing all games for all platforms | Pass | |
 | | Click on the Cancel link in the Newsletter page | Redirection to All Games page showing all games for all platforms | Pass | |
-| | Click on the Cancel link in the Add game (Game management) page | Redirection to All Games page showing all games for all platforms | Pass | |
+| | Click on the Cancel link in the Add perfume (Game management) page | Redirection to All Games page showing all games for all platforms | Pass | |
 | | Click on the Cancel link in the Edit game (Game management) page | Redirection to All Games page showing all games for all platforms | Pass | |
 | | Click on the Cancel link in the Delete game (Game management) page | Redirection to All Games page showing all games for all platforms | Pass | |
 | | Click on the Keep shopping link in the Game detail page | Redirection to All Games page showing all games for all platforms | Pass | |
