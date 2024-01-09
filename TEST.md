@@ -86,17 +86,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | About Us Page | | | | |
 | | Click on About Us link in navbar | Redirection to About Us page | Pass | |
 | | Click on About Us link in footer | Redirection to About Us page | Pass | |
-| | Click on About Us page external links | External links open in new page | Pass | |
-| Games Page | | | | |
-| | Click on Shop now link in homepage Jumbotron | Redirection to All Games page showing all games for all platforms | Pass | |
-| | Click on Playstation Games link in homepage | Redirection to Games page showing Playstation 4 and 5 Games | Pass | |
-| | Click on Xbox Games link in homepage | Redirection to Games page showing Xbox one and Xbox Series x/s Games | Pass | |
-| | Click on PC Games link in homepage | Redirection to Games page showing Playstation 4 and 5 Games | Pass | |
-| | Click on Best prices in market info heading link in the bottom of homepage | Redirection to All Games page showing all games for all platforms | Pass | |
-| | Click on each one of the platform options links in the dropdown menu for All Games in navbar | Redirection to Games page showing the games of the platform selected | Pass | |
-| | Click on each one of the platform badges links in the All Games page | Redirection to Games page showing the games of the platform selected | Pass | |
-| | Click on each one of the genre options links in the dropdown menu for Genre in navbar | Redirection to Games page showing the games of the genre selected | Pass | |
-| | Click on each one of the pegi options links in the dropdown menu for Pegi in navbar | Redirection to Games page showing the games of the Pegi selected | Pass | |
+| | Click on About Us page external links | External links open in new page | Pass |
 | | Click on the Cancel link in the Contact us page | Redirection to All Games page showing all games for all platforms | Pass | |
 | | Click on the Cancel link in the Newsletter page | Redirection to All Games page showing all games for all platforms | Pass | |
 | | Click on the Cancel link in the Add game (Game management) page | Redirection to All Games page showing all games for all platforms | Pass | |
