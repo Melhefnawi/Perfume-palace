@@ -70,7 +70,7 @@ Store owners/admins can administer the site from the user interface, they have t
 
 - As a Site User I would like to register for an account so that I can login and out with personal account and recover my password in case I forget it. 
 - As a Site User I would like to view a list of perfumes so that I can select one or more to purchase. 
-- As a Site User I would like to view an individual perfume so that I can identify its name, price, image, genre, description, year, platform and rating. 
+- As a Site User I would like to view an individual perfume so that I can identify its name, price, image, description, year, platform and rating. 
 - As a Site User I would like to search for a specific perfume name so that I can easily find the perfume I want to purchase. 
 - As a Site User I would like to sort perfume by price, description, name, and rating so that I can easily find the perfume according to my preferences. 
 - As a Site User I would like to add, view, update and delete perfume in the shopping basket so that I can manage/review my shopping basket before proceeding to checkout. 
@@ -97,17 +97,17 @@ Store owners/admins can administer the site from the user interface, they have t
 
 - **Navagation Bar**
 
-  - The navigation bar is located at the top of the screen and it's centered both vertically and horizontally. It has the site logo on the left side and the search bar on the right side, below these two elements we find the navigation links for Home, About Us, all games (dropdown menu), genre (dropdown menu), pegi rating (dropdown menu), contact us and my account (dropdown menu).
+  - The navigation bar is located at the top of the screen and it's centered both vertically and horizontally. It has the site logo on the left side and the search bar in the center, below these two elements we find the navigation links for Home, About Us, all perfumes (dropdown menu), category(dropdown menu), special offers.
   - The navigation bar is fully responsive thanks to the use of Bootstrap, also the layout changes to expandable and fully vertical once small screens are used.
   - When small screens are used the search icon is clickable and once clicked on, it drops down a search bar.
-    - All links in the navigation menu have visual cues (except for platform, genre and pegi, given these are gotten via filtering) regarding where the user currently is on the site, as well as which links are they about to click on, making it easier to navigate.
+    
     - The navigation menu is identical across all the pages on the site which provides quick navigation learning.
 
 ![NavBar](documentation/nav-bar.png)
 
 - **Home/Index**
 
-  - The home page welcomes the user (new or returning) to the site, it subtly and intuitively shows the user what the site is about via a jumbotron with image/text and what it offers, which is a site about video games where users can easily find video games for different consoles, genres and ages, giving them as well a call to action button to start shopping. Below the jumbotron the home page lets the user quickly go to three different consoles games array should they choose to and on the third section, three links are porvided to lead the user to the games page, the newsletter and the contact us page.
+  - The home page welcomes the user (new or returning) to the site, it subtly and intuitively shows the user what the site is about  and what it offers, which is a site about perfume where users can easily find perfume for different brands, price, and categories, giving them as well a call to action button to start shopping. 
 
 ![Home](documentation/home.png)
 
