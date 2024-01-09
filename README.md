@@ -160,33 +160,22 @@ Store owners/admins can administer the site from the user interface, they have t
 
 - **Perfume detail**
 
-  - The perfume detail page shows the user all the game's attributes.
+  - The perfume detail page shows the user all the perfume's attributes.
   - At the top of the screen the free delivery banner is displayed again the same as in the home page.
   - Next we find on the left of the screen the perfume's image and on the right side the name, price, quantity which can be adjusted by the user thanks to JS, a button to keep shopping which will bring the user back to 'all perfume' and a button to 'add to basket' which will indeed add the perfume to the basket.
-  - Platform which is clickable and will bring the user to that particular perfume group.
- 
-  - Next we have year and likes count, in years the game release year is shown and in the likes count, the user is shown how many likes the game has and if they're not logged in, that they need to login(link to login page) in order be able to like it, once they like the game by clicking on the heart icon, there will be an indicator letting them know they like the game.
-  - Last on this section the user will be informed whether this game is available in other platforms or if it is exclusive.
-  - On the next section below, the description of the game will be displayed as 'additional game information' and on the section after, there will be a game trailer video specific to the game being viewed.
-
-![Game detail](documentation/game-detail.png)
-
-- **Game detail as admin**
-
-  - The game detail page is basically the same, except for the fact that when a user with superuser privileges is logged in, the option to edit and delete the game will be shown.
-
-![Game detail as admin](documentation/game-detail-as-admin.png)
+  
+  
 
 - **Shooping basket**
 
-  - The shopping basket page is where the user will put all the games they want to purchase before proceeding with the checkout process.
-  - Once a game is added to the basket the basket icon in the navbar will change in color, slightly in size and will show the amount of games in it at any given page the user decides to go.
+  - The shopping basket page is where the user will put all the perfumes they want to purchase before proceeding with the checkout process.
+  - Once a game is added to the basket the basket icon in the navbar will change in color, slightly in size and will show the amount of perfume in it at any given page the user decides to go.
   - In the basket page we see two headings, one to indicate it is the 'shopping basket' and the other one 'product info'.
-  - The product info section is where all the info for the game or games added to the basket will be, this section was built as a table for large and medium screens and with bootstrap rows and columns for small screens.
-  - The product info section shows the game's image, its name, price, quantity which can be adjusted by the user thanks to JS and the subtotal for that particular game (based on quantity).
-  - Below the quantity amount there are two buttons one to update the quantity should the user decides to change it and one to remove the game altogether from the basket.
+  - The product info section is where all the info for the perfumes added to the basket will be, this section was built as a table for large and medium screens and with bootstrap rows and columns for small screens.
+  - The product info section shows the perfume image, its name, price, quantity which can be adjusted by the user thanks to JS and the subtotal for that particular game (based on quantity).
+  - Below the quantity amount there are two buttons one to update the quantity should the user decides to change it and one to remove the perfume altogether from the basket.
   - Next the user can see the 'basket total', the 'delivery' cost should there be any and the 'grand total' which is what the user will ultimately pay. Below the 'grand total' there will be a message for the user is the 'basket total' is below the free delivery threshold, this message will let the user know exactly how much more they will need to spend to avail of the free delivery offer.
-  - Lastly there two buttons, one to 'keep shopping' which will bring the user back to 'all games' and one for 'secure checkout' which will take the user to the checkout page to start the checkout process.
+  - Lastly there two buttons, one to 'keep shopping' which will bring the user back to 'all product' and one for 'secure checkout' which will take the user to the checkout page to start the checkout process.
 
 ![Shooping basket](documentation/shopping-basket.png)
 
@@ -201,7 +190,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - The checkout page is where the user will input their delivery/payment details to complete the order.
   - Checkout is comprised by two sections, one is a form where the user will input their details such as full name, email address, phone number, street address, town, county, postal code, country, and card details, Should the user be registred and logged in, full name and email address will be prefilled and if they saved/updated their profile information the rest of the fields will also be prefilled (except for the card details). At the end of the form there will be two buttons and a message for the user. One button is to 'adjust basket' which brings the user back to the shopping basket and the other is to complete the order and the message is to indicate the user excatly how much their card will be charged.
   - The 'save info' checkbox in the form right after 'country' field, is for the user to save their info in their profile for future transactions and it is checked by default, in the case the user is annonymous then a message will show instead letting the user know that in order to save their info they need to register/login.
-  - The second section will contain the order summary indicating the amount of games in the order, the game or games name, platform, quantity and subtotal and lastly the 'order total', 'delivery' cost and 'grand total'.
+  - The second section will contain the order summary indicating the amount of perfume in the order, the game or games name, platform, quantity and subtotal and lastly the 'order total', 'delivery' cost and 'grand total'.
 
 ![Checkout](documentation/checkout.png)
 
@@ -215,8 +204,8 @@ Store owners/admins can administer the site from the user interface, they have t
 
   - The checkout success page is where the user will be able to see the confirmation and summary of their just completed order.
   - In the checkout success page there is a heading thanking the user for their purchase, then a paragraph letting the user know that an order confirmation email will be sent to the email provided.
-  - Below, the user can see a pseudo table with the 'order info' which contains 'order number' and 'order date', 'order details' containing game or games name, platform, quantity and price, then all the delivery information and lastly the billing info containing 'order total', 'delivery' and 'grand total'.
-  - At the bottom there is a button 'check out all our games' which takes the user to the 'all games' page.
+  - Below, the user can see a pseudo table with the 'order info' which contains 'order number' and 'order date', 'order details' containing perfume or perfume name, quantity and price, then all the delivery information and lastly the billing info containing 'order total', 'delivery' and 'grand total'.
+  - At the bottom there is a button 'check out all our games' which takes the user to the 'all perfume' page.
 
 ![Checkout success](documentation/checkout-success.png)
 
