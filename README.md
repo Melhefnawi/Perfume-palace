@@ -145,51 +145,26 @@ Store owners/admins can administer the site from the user interface, they have t
 
 ![Logout](documentation/logout.png)
 
-- **About Us**
-
-  - The about us page is an informational page where the user can find more detailed information regarding the website and its purpose.
-  - There are three informative paragraphs, one for about us, one for our mission and one for what we offer.
-  - At the end of the page there is a final section with external links for other potential interests the user might have such as games guides, reviews blogs and games accessories shops.
 
 ![About-Us](documentation/about-us.png)
 
-- **Games**
+- **Product**
 
-  - The games page is where the games the store is selling are displayed, they're displayed in cards that contain the game's image, name, price, platform and likes count.
+  - The product page is where the perfume of the store is selling are displayed, they're displayed in cards that contain the perfume image, name, price.
   - Thanks to bootstrap for large screens the cards are laid out in rows of four columns, for medium screens in rows of three columns and for small in rows of one column.
   - At the top of the screen a free delivery banner is shown to the user to let them know that delivery is free once they spend €30 or more.
-  - After the free delivery offer banner, we find the heading and a series of badges indicating the available games groups by platform, should the user click on one of them, they will be brought to the games page filtered by the specific platform games group.
-  - Next on the left side, there is a 'Games Home' link which will bring the user back to 'all games' meaning all games will be displayed without sorting or filtering and next to the 'Games Home' link, the amount of games rendered at any given time will be displayed.
-  - On the right side there is a 'Sort by' drop down menu that allows the user to sort the games they're looking at by price (low-high, high-low), popularity (low-high, high-low), pegi rating (low-high, high-low), name (A-Z, Z-A) and Platform (A-Z, Z-A), thanks to a combination of python code in the view and Django template logic.
+  - After the free delivery offer banner, we find the heading and a series of badges indicating the available perfume groups by platform, should the user click on one of them, they will be brought to the perfume page filtered by the specific platform perfume group.
+  - Next on the left side, there is a 'All product' link which will bring the user back to 'all perfume' meaning all perfume will be displayed without sorting or filtering. 
+  - On the right side there is a 'Sort by' drop down menu that allows the user to sort the perfume  by price (low-high, high-low), name (low-high, high-low), rating (low-high, high-low), and category (A-Z, Z-A), thanks to a combination of python code in the view and Django template logic.
 
-![Games](documentation/games.png)
 
-- **Games by genre**
+- **Perfume detail**
 
-  - The games page is basically the same, except for the fact that the badge will be the selected genre and the games displayed will contain the selected genre.
-
-![Games by genre](documentation/games-by-genre.png)
-
-- **Games by pegi rating**
-
-  - The games page is basically the same, except for the fact that the badge will be the selected pegi rating and the games displayed will contain the selected pegi rating.
-
-![Games by pegi rating](documentation/games-by-pegi.png)
-
-- **Games as admin**
-
-  - The games page is basically the same, except for the fact that when a user with superuser privileges is logged in, the option to edit and delete the games will be shown.
-
-![Games as admin](documentation/games-as-admin.png)
-
-- **Game detail**
-
-  - The game detail page shows the user all the game's attributes.
-  - At the top of the screen the free delivery banner is displayed again the same as in the games page.
-  - Next we find on the left of the screen the game's image and on the right side the name, price, quantity which can be adjusted by the user thanks to JS, a button to keep shopping which will bring the user back to 'all games' and a button to 'add to basket' which will indeed add the game to the basket.
-  - Platform which is clickable and will bring the user to that particular platform games group.
-  - Pegi rating which has the same fuctionality as platform (clickable).
-  - Genre again with the same functionality as the previous two.
+  - The perfume detail page shows the user all the game's attributes.
+  - At the top of the screen the free delivery banner is displayed again the same as in the home page.
+  - Next we find on the left of the screen the perfume's image and on the right side the name, price, quantity which can be adjusted by the user thanks to JS, a button to keep shopping which will bring the user back to 'all perfume' and a button to 'add to basket' which will indeed add the perfume to the basket.
+  - Platform which is clickable and will bring the user to that particular perfume group.
+ 
   - Next we have year and likes count, in years the game release year is shown and in the likes count, the user is shown how many likes the game has and if they're not logged in, that they need to login(link to login page) in order be able to like it, once they like the game by clicking on the heart icon, there will be an indicator letting them know they like the game.
   - Last on this section the user will be informed whether this game is available in other platforms or if it is exclusive.
   - On the next section below, the description of the game will be displayed as 'additional game information' and on the section after, there will be a game trailer video specific to the game being viewed.
