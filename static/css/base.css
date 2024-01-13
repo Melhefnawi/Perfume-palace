@@ -298,12 +298,11 @@ input[name='q']::placeholder {
 }
 
 .hh-50 {
-    height: 50%;
-    width: 100%;
-    float: left;
-    display: block;
-    padding-left: 100px;
-    
+    padding-left: 200px;
+}
+
+.w-90{
+    width:90%;
 }
 
 .center {
