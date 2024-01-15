@@ -33,7 +33,7 @@ We give our users a place where they can look for perfumes and find information 
 
 Store owners/admins can administer the site from the user interface, they have the option to add, edit and delete perfumes as well as have access to the recieved messages and their corresponding information in the contact us section.
 
-![screenshot](documentation/am-i-responsive.png)
+![screenshot](media/Heade-01.JPG)
 
 
 ## User Stories
@@ -75,13 +75,13 @@ Store owners/admins can administer the site from the user interface, they have t
     
     - The navigation menu is identical across all the pages on the site which provides quick navigation learning.
 
-![NavBar](documentation/nav-bar.png)
+![NavBar](media/Navbar.JPG)
 
 - **Home/Index**
 
   - The home page welcomes the user (new or returning) to the site, it subtly and intuitively shows the user what the site is about  and what it offers, which is a site about perfume where users can easily find perfume for different brands, price, and categories, giving them as well a call to action button to start shopping. 
 
-![Home](documentation/home.png)
+![Home](media/Heade-01.JPG)
 
 - **Register**
 
@@ -89,7 +89,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - The register page also provides a link for the user to go to the login page in case they're already registered as well as a back to login button.
     - This functionality is achieved thanks to the power of Django allauth.
 
-![Register](documentation/register.png)
+![Register](media/Register-01.jpg)
 
 - **Register confirmation email**
 
@@ -107,7 +107,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - If the user forgot their password they have the option to reset it via a link provided at the end of the form.
     - As all the forms in the site, the login form was design to provide optimal UX.
 
-![Login](documentation/login.png)
+![Login](media/login-01.JPG)
 
 - **Logout**
 
@@ -115,10 +115,8 @@ Store owners/admins can administer the site from the user interface, they have t
   - A confirmation question will asked to the user before logging out.
   - There are two buttons at the bottom, one to confirm the logout action and one to cancel which will bring the user back home.
 
-![Logout](documentation/logout.png)
+![Logout](media/logout.png)
 
-
-![About-Us](documentation/about-us.png)
 
 - **Product**
 
@@ -129,6 +127,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - Next on the left side, there is a 'All product' link which will bring the user back to 'all perfume' meaning all perfume will be displayed without sorting or filtering. 
   - On the right side there is a 'Sort by' drop down menu that allows the user to sort the perfume  by price (low-high, high-low), name (low-high, high-low), rating (low-high, high-low), and category (A-Z, Z-A), thanks to a combination of python code in the view and Django template logic.
 
+![Logout](media/Product-01.JPG)
 
 - **Perfume detail**
 
@@ -149,13 +148,13 @@ Store owners/admins can administer the site from the user interface, they have t
   - Next the user can see the 'basket total', the 'delivery' cost should there be any and the 'grand total' which is what the user will ultimately pay. Below the 'grand total' there will be a message for the user is the 'basket total' is below the free delivery threshold, this message will let the user know exactly how much more they will need to spend to avail of the free delivery offer.
   - Lastly there two buttons, one to 'keep shopping' which will bring the user back to 'all product' and one for 'secure checkout' which will take the user to the checkout page to start the checkout process.
 
-![Shooping basket](documentation/shopping-basket.png)
+![Shooping basket](media/Shopping-bag-01.jpg)
 
 - **Shooping basket empty**
 
   - Should the shopping basket be empty, a paragraph letting the user know will be displayed and there will be a button to 'keep shopping' which will take the user to 'all perfumes' page.
 
-![Shooping basket empty](documentation/shopping-basket-empty.png)
+![Shooping basket empty](media/Empty-bag-01.jpg)
 
 - **Checkout**
 
@@ -164,7 +163,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - The 'save info' checkbox in the form right after 'country' field, is for the user to save their info in their profile for future transactions and it is checked by default, in the case the user is annonymous then a message will show instead letting the user know that in order to save their info they need to register/login.
   - The second section will contain the order summary indicating the amount of perfume in the order, the perfume or perfumes name, platform, quantity and subtotal and lastly the 'order total', 'delivery' cost and 'grand total'.
 
-![Checkout](documentation/checkout.png)
+![Checkout](media/check-out-01.JPG)
 
 - **Loading spinner**
 
