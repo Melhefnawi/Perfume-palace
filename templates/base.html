@@ -191,63 +191,60 @@
       <!-- Fix broken tag -->
       {% endwith %} {% endfor %}
     </div>
-    {% endif %} {% block page_header %} 
-    {% endblock %} 
-    {% block content %}
+    {% endif %} {% block page_header %} {% endblock %} {% block content %}
     <!-- Fix broken tag -->
-    {% endblock %} 
-    {% block postloadjs %}
+    {% endblock %} {% block postloadjs %}
     <script type="text/javascript">
       $(".toast").toast("show");
     </script>
-    {% endblock %}
-    {% block carousel %}
-    
-    {% endblock %}
-    
+    {% endblock %} {% block carousel %} {% endblock %}
+
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>company</h4>
-                    <ul>
-                        <li><a href="{% url 'company'%}">about us</a></li>
-                        <li><a href="{% url 'company'%}">our services</a></li>
-                        <li><a href="{% url 'company'%}">privacy policy</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        
-                        <li><a href="{% url 'help'%}">Contact Us</a></li>
-                        <li><a href="{% url 'help'%}">Store locations</a></li>
-                        <li><a href="{% url 'help'%}">payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>online shop</h4>
-                    <ul>
-                        <li><a href="{% url 'products'%}"> All Perfumes</a></li>
-                        <li><a href="{% url 'products'%}">Offers</a></li>
-                        <li><a href="{% url 'products'%}">Special deals</a></li>
-                      
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                       
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="{% url 'company'%}">about us</a></li>
+              <li><a href="{% url 'company'%}">our services</a></li>
+              <li><a href="{% url 'company'%}">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="{% url 'help'%}">Contact Us</a></li>
+              <li><a href="{% url 'help'%}">Store locations</a></li>
+              <li><a href="{% url 'help'%}">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="{% url 'products'%}"> All Perfumes</a></li>
+              <li><a href="{% url 'products'%}">Offers</a></li>
+              <li><a href="{% url 'products'%}">Special deals</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
   </body>
-
-
 </html>
