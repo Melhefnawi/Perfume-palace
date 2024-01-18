@@ -29,8 +29,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
+#DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-melhefnawi-perfume-palac-v2vfz4b4t1.us2.codeanyapp.com', "localhost",'perfumepalace-85931537055e.herokuapp.com']
 
