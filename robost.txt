@@ -1,0 +1,5 @@
+User-agent:*
+
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap:https://perfumepalace-85931537055e.herokuapp.com/sitemap.xml
