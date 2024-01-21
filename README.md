@@ -115,7 +115,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - A confirmation question will asked to the user before logging out.
   - There are two buttons at the bottom, one to confirm the logout action and one to cancel which will bring the user back home.
 
-![Logout](media/logout.png)
+![Logout](media/logout-01.JPG)
 
 
 - **Product**
@@ -169,7 +169,7 @@ Store owners/admins can administer the site from the user interface, they have t
 
   - Once the user clicks on complete order, while the backend code and the stripe API do their job to process the payment, the user will see a friendly loading spinner indicating the payment is being processed.
 
-![Loading spinner](documentation/loading-spinner.png)
+![Loading spinner](media/loading-01.JPG)
 
 - **Checkout success**
 
@@ -178,13 +178,13 @@ Store owners/admins can administer the site from the user interface, they have t
   - Below, the user can see a pseudo table with the 'order info' which contains 'order number' and 'order date', 'order details' containing perfume or perfume name, quantity and price, then all the delivery information and lastly the billing info containing 'order total', 'delivery' and 'grand total'.
   - At the bottom there is a button 'check out all our perfumes' which takes the user to the 'all perfume' page.
 
-![Checkout success](documentation/checkout-success.png)
+![Checkout success](media/checkout-success-01.JPG)
 
 - **Oder confirmation email**
 
   - Once the order is successfully processed and completed a confirmation email will be sent to the user with the order details.
 
-![Oder confirmation email](documentation/order-confirmation-email.png)
+
 
 - **Profile**
 
@@ -194,7 +194,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - The other section is the order history which is table containing the order or orders number, date, perfume or perfumes name and quantity and the order total.
   - The order number is hoverable (shows the complete order number) and clickable, it takes the user to the order history view for that particular order number.
 
-![Profile](documentation/profile.png)
+![Profile](media/profile-page-01.JPG)
 
 - **Order history**
 
@@ -203,7 +203,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - The information shown in the order history is excatly to the information shown in the checkout success page given the same template is used, the difference thanks to some python code in the view and a little of Django template logic, is that for the order history, the user is shown an info message at the top indicating that 'This is a past confirmation for order number (order number). A confirmation email was sent on the order date.'
   - At the end of the page there is a button to go back to profile.
 
-![Order history](documentation/order-history.png)
+![Order history](media/order-history-01.JPG)
 
 - **Add perfume**
 
@@ -213,7 +213,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - At the end of the form there are to buttons, one to cancel the action which will bring the user to 'all product page' and another to add perfume.
   - Once the perfume is added the user will be taken to the perfume detail view for the newly added perfume with a success message at the top.
 
-![Add perfume](documentation/add-perfume.png)
+![Add perfume](media/adding-product-01.JPG)
 
 - **Edit perfume**
 
@@ -223,27 +223,16 @@ Store owners/admins can administer the site from the user interface, they have t
   - At the end of the form there are to buttons, one to cancel the action which will bring the user to 'all perfumes page' and another to update perfume.
   - Once the perfume is updated the user will be taken to the perfume detail view for the newly updated perfume with a success message at the top.
 
-![Edit perfume](documentation/edit-perfume.png)
+![Edit perfume](media/Edit-perfume-01.JPG)
 
 - **Delete perfume**
 
-  - The delete perfume page allows authenticated users with superuser privileges to delete an existing perfume in the store.
-  - There are two headings, one indicating you're in perfumes management and a second one asking the user to confirm they are sure they want to delete the perfume.
-  - There are to buttons at the bottom, one to cancel the action which will bring the user to 'all perfumes page' and another to delete perfume.
+  - The delete perfume allows authenticated users with superuser privileges to delete an existing perfume in the store.
+  
+  - There are two buttons at the bottom, one to edit the action which will bring the user to 'Edit perfumes page' and another to delete perfume.
   - Once the perfume is deleted the user will be taken to the 'perfumes' page.
 
-![Delete perfume](documentation/delete-perfume.png)
-
-- **Forms errors**
-
-  - As with every form across the entire site, should there be an error or missing information on a form, the user will be informed.
-
-![Forms errors](documentation/forms-errors.png)
-
--
-- 
-
-
+![Delete perfume](media/Delete-perfume-01.JPG)
 
 
 - **Messages**
@@ -251,21 +240,16 @@ Store owners/admins can administer the site from the user interface, they have t
   - Every time the user completes an action whether it be register, login, logout, like a perfume, create a perfume, update a perfume, delete a perfume, add a perfume to the shopping basket and all the rest, a relevant message will be displayed at the top of the screen to inform the user about the action being completed successfully.
   - Also should the user perform an unauthorized action such as trying to force their way to a page that requires permission, a message will also show.
 
-![Messages](documentation/messages.png)
+![Messages](media/messages-01.JPG)
 
 - **404/500 Custom Pages**
 
-  - The 404 and 500 custom error pages show said errors in a user friendly way.
+  - The 404 custom error pages show said errors in a user friendly way.
   - The custom pages allow the user to avail of the navbar and footer present in all the other pages, making it easier for the user to go anywhere they want in the site after getting the error.
 
-![404/500](documentation/404-500.png)
+![404](media/404page-01.JPG)
 
-- **400/403 Custom Pages**
 
-  - The 400 and 403 custom error pages show said errors in a user friendly way.
-  - The custom pages allow the user to avail of the navbar and footer present in all the other pages, making it easier for the user to go anywhere they want in the site after getting the error.
-
-![400/403](documentation/400-403.png)
 
 - **Modals**
 
