@@ -264,15 +264,15 @@ Store owners/admins can administer the site from the user interface, they have t
   - A back to top button was included across the site to improve UX. The user will be able to go back to the top of the page with the click of a button instead of manually doing so.
   - The back to top button will show up only when the user starts to scroll down, when the user is located at the very top of the page the button will not be visible.
 
-![Back-To-Top](documentation/back-to-top.png)
+![Back-To-Top](media/backtotop-01.JPG)
 
 - **Footer**
 
   - The footer the same as the navbar, is identical across the site.
-  - The footer contains several links. Links to social media such as Facebook, Instagram, YouTube and Twitter which open in a different tab. It also contains links to Privacy Policy and Terms & Conditions, which are both modals. Also links to the about us and contact us pages.
-  - At the end of the footer there is the name of the site and the programmer's credits.
+  - The footer contains several links. Links to social media such as Facebook, Instagram, YouTube and Twitter which open in a different tab. It also contains links to Privacy Policy and Terms & Conditions. Also links to the about us and contact us pages.
+ 
 
-![Footer](documentation/footer.png)
+![Footer](media/footer-01.jpg)
 
 ### Future Features
 
@@ -324,22 +324,20 @@ Through it, user stories, issues, and milestone tasks were planned, then tracked
 
 ### GitHub Issues
 
-[GitHub Issues](https://github.com/leonardo-simeone/perfumesground-store/issues?q=is%3Aissue+is%3Aclosed) served as an another Agile tool.
+[GitHub Issues](https://github.com/Melhefnawi/Perfume-palace/issues/10) served as an another Agile tool.
 There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
 
-- [Open Issues](https://github.com/leonardo-simeone/perfumesground-store/issues?q=is%3Aopen+is%3Aissue), There is only one open issue remaining (won't have) which will be addressed in a future iteration along with other issues to come for [Future Features](#future-features), [Link here](https://github.com/leonardo-simeone/perfumesground-store/issues/20).
+- [Open Issues](https://github.com/users/Melhefnawi/projects/5/views/1?pane=issue&itemId=49181946), There is only one open issues remaining (won't have) which will be addressed in a future iteration along with other issues.
 
-![screenshot](documentation/gh-issues-open.png)
+![screenshot](media/issues-01.JPG)
 
-- [Closed Issues](https://github.com/leonardo-simeone/perfumesground-store/issues?q=is%3Aissue+is%3Aclosed)
 
-![screenshot](documentation/gh-issues-closed.png)
 
 ### MoSCoW Prioritization
 
-I've decomposed my Epics into stories prior to prioritizing and implementing them.
+I've decomposed my issues into stories prior to prioritizing and implementing them.
 Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
 
 - **Must Have**: guaranteed to be delivered (_max 60% of stories_)
@@ -373,7 +371,7 @@ This included a series of the following keyword types
 - Short-tail (head terms) keywords
 - Long-tail keywords
 
-![screenshot](documentation/keywords-selection.png)
+
 
 
 
