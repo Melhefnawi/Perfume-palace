@@ -450,11 +450,24 @@ ul {
     background-color: #ffffff;
 }
 
+#mc_embed_signup {
+    background: black;
+
+    clear: rigth;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+}
+
 /*responsive*/
 @media(max-width: 767px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
+    }
+
+    #mc_embed_signup {
+        
+        width: 300px;
     }
 }
 
@@ -474,12 +487,10 @@ ul {
     .mt-3 {
          margin-top: 3rem;
     }
+
+    #mc_embed_signup {
+        
+        width: 200px;
+    }
 }
 
-#mc_embed_signup {
-    background:black;
-
-    clear: rigth;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
-}
