@@ -135,7 +135,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - At the top of the screen the free delivery banner is displayed again the same as in the home page.
   - Next we find on the left of the screen the perfume's image and on the right side the name, price, quantity which can be adjusted by the user thanks to JS, a button to keep shopping which will bring the user back to 'all perfume' and a button to 'add to basket' which will indeed add the perfume to the basket.
   
-  
+  ![Logout](media/product-details-01.JPG)
 
 - **Shooping basket**
 
