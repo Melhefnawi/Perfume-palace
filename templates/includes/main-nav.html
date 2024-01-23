@@ -5,6 +5,7 @@
         class="logo-font font-weight-bold nav-link text-black mr-5"
         href="{% url 'home' %}"
         id="home-link"
+        rel="noopener"
       >
         Home
       </a>
@@ -17,23 +18,24 @@
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        rel="noopener"
       >
         All Products
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
         <a
           href="{% url 'products' %}?sort=price&direction=asc"
-          class="dropdown-item"
+          class="dropdown-item" rel="noopener"
           >By Price</a
         >
         <a
           href="{% url 'products' %}?sort=rating&direction=desc"
-          class="dropdown-item"
+          class="dropdown-item" rel="noopener"
           >By Rating</a
         >
         <a
           href="{% url 'products' %}?sort=category&direction=asc"
-          class="dropdown-item"
+          class="dropdown-item" rel="noopener"
           >By Category</a
         >
         <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
@@ -48,15 +50,16 @@
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        rel="noopener"
       >
         Categories
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
         <a href="{% url 'products' %}?category=Men" class="dropdown-item"
-          >Men</a
+          rel="noopener">Men</a
         >
         <a href="{% url 'products' %}?category=Women " class="dropdown-item"
-          >Women</a
+          rel="noopener">Women</a
         >
       </div>
     </li>
@@ -69,15 +72,16 @@
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        rel="noopener"
       >
         Brand
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-        <a href="{% url 'products' %}?brand=Boss" class="dropdown-item">Boss</a>
-        <a href="{% url 'products' %}?brand=CHANEL" class="dropdown-item">CHANEL</a>
-        <a href="{% url 'products' %}?brand=DIOR" class="dropdown-item">DIOR</a>
-        <a href="{% url 'products' %}?brand=CAROLINA HERRERA" class="dropdown-item">CH</a>
-        <a href="{% url 'products' %}" class="dropdown-item">All Brands</a>
+        <a href="{% url 'products' %}?brand=Boss" class="dropdown-item" rel="noopener">Boss</a>
+        <a href="{% url 'products' %}?brand=CHANEL" class="dropdown-item" rel="noopener">CHANEL</a>
+        <a href="{% url 'products' %}?brand=DIOR" class="dropdown-item" rel="noopener">DIOR</a>
+        <a href="{% url 'products' %}?brand=CAROLINA HERRERA" class="dropdown-item" rel="noopener">CH</a>
+        <a href="{% url 'products' %}" class="dropdown-item" rel="noopener">All Brands</a>
       </div>
     </li>
 
@@ -89,14 +93,15 @@
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        rel="noopener"
       >
         Special Offers
       </a>
       <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-        <a href="{% url 'products' %}?form=new" class="dropdown-item">New Arrivals</a>
-        <a href="{% url 'products' %}?form=deals" class="dropdown-item">Deals</a>
-        <a href="{% url 'products' %}?form=clearance" class="dropdown-item">Clearance</a>
-        <a href="{% url 'products' %}?form=special" class="dropdown-item">All Specials</a>
+        <a href="{% url 'products' %}?form=new" class="dropdown-item" rel="noopener">New Arrivals</a>
+        <a href="{% url 'products' %}?form=deals" class="dropdown-item" rel="noopener">Deals</a>
+        <a href="{% url 'products' %}?form=clearance" class="dropdown-item" rel="noopener">Clearance</a>
+        <a href="{% url 'products' %}?form=special" class="dropdown-item" rel="noopener">All Specials</a>
       </div>
     </li>
   </ul>
