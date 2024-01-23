@@ -19,6 +19,7 @@ def all_products(request):
     sort = None
     direction = None
     brands = None
+    forms = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -43,8 +44,11 @@ def all_products(request):
         if 'brand' in request.GET:
             brands = request.GET['brand'].split(',')
             products = products.filter(brand__in=brands)
-               
 
+        if 'form' in request.GET:
+            forms = request.GET['form'].split(',')
+            products = products.filter(form__in=forms)
+               
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
