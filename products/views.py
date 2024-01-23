@@ -42,7 +42,7 @@ def all_products(request):
 
         if 'brand' in request.GET:
             brands = request.GET['brand']
-            products = products.filter(brands)
+            products = products.filter(brand__in=brands)
                
 
         if 'q' in request.GET:
