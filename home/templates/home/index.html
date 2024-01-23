@@ -17,8 +17,7 @@
           <a
             href="{% url 'products' %}"
             class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"
-            rel="noopener"
-            >Shop Now</a
+            rel="noopener">Shop Now</a
           >
         </h4>
       </div>
@@ -142,8 +141,7 @@
     href="#carouselExampleControls"
     role="button"
     data-slide="prev"
-    rel="noopener"
-  >
+    rel="noopener">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
@@ -151,134 +149,86 @@
     class="carousel-control-next"
     href="#carouselExampleControls"
     role="button"
-    data-slide="next"
-    rel="noopener"
+    data-slide="next" rel="noopener"
   >
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
-{% endblock %} {% block footer %}
+{% endblock %}
+{% block footer %}
 <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col">
-        <h4>company</h4>
-        <ul>
-          <li><a href="{% url 'company'%}" rel="noopener">about us</a></li>
-          <li><a href="{% url 'company'%}" rel="noopener">our services</a></li>
-          <li>
-            <a href="{% url 'company'%}" rel="noopener">privacy policy</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>get help</h4>
-        <ul>
-          <li><a href="{% url 'help'%}" rel="noopener">Contact Us</a></li>
-          <li><a href="{% url 'help'%}" rel="noopener">Store locations</a></li>
-          <li><a href="{% url 'help'%}" rel="noopener">payment options</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>online shop</h4>
-        <ul>
-          <li>
-            <a href="{% url 'products'%}" rel="noopener"> All Perfumes</a>
-          </li>
-          <li><a href="{% url 'products'%}" rel="noopener">Offers</a></li>
-          <li>
-            <a href="{% url 'products'%}" rel="noopener">Special deals</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>follow us</h4>
-        <div class="social-links">
-          <a
-            href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid"
-            rel="noopener"
-            target="_blank"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid"
-            rel="noopener"
-            target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid"
-            rel="noopener"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="{% url 'company'%}" rel="noopener">about us</a></li>
+                    <li><a href="{% url 'company'%}" rel="noopener">our services</a></li>
+                    <li><a href="{% url 'company'%}" rel="noopener">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="{% url 'help'%}" rel="noopener">Contact Us</a></li>
+                    <li><a href="{% url 'help'%}" rel="noopener">Store locations</a></li>
+                    <li><a href="{% url 'help'%}" rel="noopener">payment options</a></li>
+       {% url 'products' %}?form=deals        </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="{% url 'products'%}" rel="noopener"> All Perfumes</a></li>
+                    <li><a href="{% url 'products' %}?form=deals" rel="noopener">Offers</a></li>
+                    <li><a href="{% url 'products' %}?form=special" rel="noopener">Special deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid" rel="noopener" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid" rel="noopener" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61555400173022&sk=grid" rel="noopener" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <div id="mc_embed_signup">
-    <form
-      action="https://herokuapp.us21.list-manage.com/subscribe/post?u=71d34427068153e5c786ffa5b&amp;id=a7100f6690&amp;f_id=00b5f3e6f0"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      class="validate"
-      target="_blank"
-    >
-      <div id="mc_embed_signup_scroll">
-        <h2>Subscribe</h2>
-        <div class="indicates-required">
-          <span class="asterisk">*</span> indicates required
-        </div>
-        <div class="mc-field-group">
-          <label for="mce-EMAIL"
-            >Email Address <span class="asterisk">*</span></label
-          ><input
-            type="email"
-            name="EMAIL"
-            class="required email"
-            id="mce-EMAIL"
-            required=""
-            value=""
-          />
-        </div>
-        <div id="mce-responses" class="clear foot">
-          <div
-            class="response"
-            id="mce-error-response"
-            style="display: none"
-          ></div>
-          <div
-            class="response"
-            id="mce-success-response"
-            style="display: none"
-          ></div>
-        </div>
-        <div aria-hidden="true" style="position: absolute; left: -5000px">
-          /* real people should not fill this in and expect good things - do not
-          remove this or risk form bot signups */
-          <input
-            type="text"
-            name="b_71d34427068153e5c786ffa5b_a7100f6690"
-            tabindex="-1"
-            value=""
-          />
-        </div>
-        <div class="optionalParent">
-          <div class="clear foot">
-            <input
-              type="submit"
-              name="subscribe"
-              id="mc-embedded-subscribe"
-              class="button"
-              value="Subscribe"
-            />
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
+
+    <div id="mc_embed_signup">
+        <form
+            action="https://herokuapp.us21.list-manage.com/subscribe/post?u=71d34427068153e5c786ffa5b&amp;id=a7100f6690&amp;f_id=00b5f3e6f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank">
+            <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
+                            class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email"
+                        id="mce-EMAIL" required="" value="">
+                </div>
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    /* real people should not fill this in and expect good things - do not remove this or risk form bot
+                    signups */
+                    <input type="text" name="b_71d34427068153e5c786ffa5b_a7100f6690" tabindex="-1" value="">
+                </div>
+                <div class="optionalParent">
+                    <div class="clear foot">
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                            value="Subscribe">
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 </footer>
 {% endblock %}
+
