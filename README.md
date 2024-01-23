@@ -1,5 +1,6 @@
 # Table of Contents
 
+
 - [Table of Contents](#table-of-contents)
   - [Perfume Palace Store](#perfume-palace-store)
   - [User Stories](#user-stories)
@@ -34,31 +35,33 @@ Store owners/admins can administer the site from the user interface, they have t
 
 ![screenshot](media/Heade-01.JPG)
 
+
 ## User Stories
 
 ### Site Users
 
-- As a Site User I would like to register for an account so that I can login and out with personal account and recover my password in case I forget it.
-- As a Site User I would like to view a list of perfumes so that I can select one or more to purchase.
-- As a Site User I would like to view an individual perfume so that I can identify its name, price, image, description, year, platform and rating.
-- As a Site User I would like to search for a specific perfume name so that I can easily find the perfume I want to purchase.
-- As a Site User I would like to sort perfume by price, description, name, and rating so that I can easily find the perfume according to my preferences.
-- As a Site User I would like to add, view, update and delete perfume in the shopping basket so that I can manage/review my shopping basket before proceeding to checkout.
-- As a Site User I would like to easily view the total amount of perfumes in my shopping basket so that I can know how many perfumes are there in my basket at all times.
-- As a Site User I would like to provide the necessary billing/delivery details so that I can purchase perfume and view an order confirmation after checkout to verify all the information from my purchase is accurate.
-- As a Site User I would like to receive an email confirmation after my purchase so that I can keep records of my transactions.
-- As a Site User I would like to create/manage my personal account profile so that I can view/update my profile, view my order history and save my payment information.
-- As a Site User I would like to contact the site administrator so that I can query/recommend the site admin on different topics.
+- As a Site User I would like to register for an account so that I can login and out with personal account and recover my password in case I forget it. 
+- As a Site User I would like to view a list of perfumes so that I can select one or more to purchase. 
+- As a Site User I would like to view an individual perfume so that I can identify its name, price, image, description, year, platform and rating. 
+- As a Site User I would like to search for a specific perfume name so that I can easily find the perfume I want to purchase. 
+- As a Site User I would like to sort perfume by price, description, name, and rating so that I can easily find the perfume according to my preferences. 
+- As a Site User I would like to add, view, update and delete perfume in the shopping basket so that I can manage/review my shopping basket before proceeding to checkout. 
+- As a Site User I would like to easily view the total amount of perfumes in my shopping basket so that I can know how many perfumes are there in my basket at all times. 
+- As a Site User I would like to provide the necessary billing/delivery details so that I can purchase perfume and view an order confirmation after checkout to verify all the information from my purchase is accurate. 
+- As a Site User I would like to receive an email confirmation after my purchase so that I can keep records of my transactions. 
+- As a Site User I would like to create/manage my personal account profile so that I can view/update my profile, view my order history and save my payment information. 
+- As a Site User I would like to contact the site administrator so that I can query/recommend the site admin on different topics. 
 - As a Site User I would like to subscribe to a newsletter so that I can receive news, special offers and general information related to the store.
-- As a Site User I would like to navigate to the site's about us, terms & conditions and privacy policy links so that I can inform myself in more depth about the site.
-- As a Site User I would like to receive an email every time a new perfume is added to the store so that I will be up to date with what perfumes are available.
-
+- As a Site User I would like to navigate to the site's about us, terms & conditions and privacy policy links so that I can inform myself in more depth about the site. 
+- As a Site User I would like to receive an email every time a new perfume is added to the store so that I will be up to date with what perfumes are available. 
 ### Site Admin
 
-- As a site administrator, I should be able to create/add, read, update and delete perfume so that I can manage the perfumes on the site,
-- As a site administrator, I should be able to add, update and delete ratings so that I can assign ratings to perfumes,
-- As a site administrator, I should be able to add, update and delete platforms so that I can assign platforms to perfumes,
-- As a site administrator/site owner, I should be able to add/edit/delete perfumes from the website so that I can manage new perfumes, perfumes updates or perfumes that are no longer available,
+- As a site administrator, I should be able to create/add, read, update and delete perfume so that I can manage the perfumes on the site, 
+- As a site administrator, I should be able to add, update and delete  ratings so that I can assign ratings to perfumes, 
+- As a site administrator, I should be able to add, update and delete platforms so that I can assign platforms to perfumes, 
+- As a site administrator/site owner, I should be able to add/edit/delete perfumes from the website so that I can manage new perfumes, perfumes updates or perfumes that are no longer available, 
+
+
 
 ## Features
 
@@ -69,14 +72,14 @@ Store owners/admins can administer the site from the user interface, they have t
   - The navigation bar is located at the top of the screen and it's centered both vertically and horizontally. It has the site logo on the left side and the search bar in the center, below these two elements we find the navigation links for Home, About Us, all perfumes (dropdown menu), category(dropdown menu), special offers.
   - The navigation bar is fully responsive thanks to the use of Bootstrap, also the layout changes to expandable and fully vertical once small screens are used.
   - When small screens are used the search icon is clickable and once clicked on, it drops down a search bar.
-
+    
     - The navigation menu is identical across all the pages on the site which provides quick navigation learning.
 
 ![NavBar](media/Navbar.JPG)
 
 - **Home/Index**
 
-  - The home page welcomes the user (new or returning) to the site, it subtly and intuitively shows the user what the site is about and what it offers, which is a site about perfume where users can easily find perfume for different brands, price, and categories, giving them as well a call to action button to start shopping.
+  - The home page welcomes the user (new or returning) to the site, it subtly and intuitively shows the user what the site is about  and what it offers, which is a site about perfume where users can easily find perfume for different brands, price, and categories, giving them as well a call to action button to start shopping. 
 
 ![Home](media/Heade-01.JPG)
 
@@ -88,17 +91,9 @@ Store owners/admins can administer the site from the user interface, they have t
 
 ![Register](media/Register-01.jpg)
 
-- **Register confirmation email**
+ **Register confirmation email**
 
-  - Once the user is registered a confirmation email is sent to the email address provided, when the user clicks on the link provided in the confirmation email, the user is taken back to the site with a confirm email message, once the user clicks confirm, a success message is displayed and the user is taken to the login page.
-
-![Register confirmation email](documentation/sign-up-email-confirmation.png)
-
-- **Login**
-
-  - The login page allows a registered user to login with their username and password.
-  - The form contains a checkbox which is unchecked by default, this option will allow the user to remember their session or not.
-    - Once logged in, the user can avail of the features that an authenticated user is allowed, such as create their own profile, view their order history and like perfumes.
+  - Once the user is registered a confirmation email is sent to the email address provided, when the user clicks on the link provided in the confirmation email, the user is taken back to the site with a confirm email message, once the user clicks confirm, a success message is displayed and the user icreate their own profile, view their order history and like perfumes.
     - Should the user not be registered yet, the option to do so is provided at the top of the form with a link.
   - At the the bottom of the form the user has 2 buttons, one to login and another to go home.
   - If the user forgot their password they have the option to reset it via a link provided at the end of the form.
@@ -114,14 +109,15 @@ Store owners/admins can administer the site from the user interface, they have t
 
 ![Logout](media/logout-01.JPG)
 
+
 - **Product**
 
   - The product page is where the perfume of the store is selling are displayed, they're displayed in cards that contain the perfume image, name, price.
   - Thanks to bootstrap for large screens the cards are laid out in rows of four columns, for medium screens in rows of three columns and for small in rows of one column.
-  - At the top of the screen a free delivery banner is shown to the user to let them know that delivery is free once they spend €30 or more.
+  - At the top of the screen a free delivery banner is shown to the user to let them know that delivery is free once they spend €50 or more.
   - After the free delivery offer banner, we find the heading and a series of badges indicating the available perfume groups by platform, should the user click on one of them, they will be brought to the perfume page filtered by the specific platform perfume group.
-  - Next on the left side, there is a 'All product' link which will bring the user back to 'all perfume' meaning all perfume will be displayed without sorting or filtering.
-  - On the right side there is a 'Sort by' drop down menu that allows the user to sort the perfume by price (low-high, high-low), name (low-high, high-low), rating (low-high, high-low), and category (A-Z, Z-A), thanks to a combination of python code in the view and Django template logic.
+  - Next on the left side, there is a 'All product' link which will bring the user back to 'all perfume' meaning all perfume will be displayed without sorting or filtering. 
+  - On the right side there is a 'Sort by' drop down menu that allows the user to sort the perfume  by price (low-high, high-low), name (low-high, high-low), rating (low-high, high-low), and category (A-Z, Z-A), thanks to a combination of python code in the view and Django template logic.
 
 ![Logout](media/Product-01.JPG)
 
@@ -130,7 +126,7 @@ Store owners/admins can administer the site from the user interface, they have t
   - The perfume detail page shows the user all the perfume's attributes.
   - At the top of the screen the free delivery banner is displayed again the same as in the home page.
   - Next we find on the left of the screen the perfume's image and on the right side the name, price, quantity which can be adjusted by the user thanks to JS, a button to keep shopping which will bring the user back to 'all perfume' and a button to 'add to basket' which will indeed add the perfume to the basket.
-
+  
   ![Logout](media/product-details-01.JPG)
 
 - **Shooping basket**
@@ -180,6 +176,8 @@ Store owners/admins can administer the site from the user interface, they have t
 
   - Once the order is successfully processed and completed a confirmation email will be sent to the user with the order details.
 
+
+
 - **Profile**
 
   - The profile page shows the user their saved profile/delivery information and their order history.
@@ -222,11 +220,12 @@ Store owners/admins can administer the site from the user interface, they have t
 - **Delete perfume**
 
   - The delete perfume allows authenticated users with superuser privileges to delete an existing perfume in the store.
-
+  
   - There are two buttons at the bottom, one to edit the action which will bring the user to 'Edit perfumes page' and another to delete perfume.
   - Once the perfume is deleted the user will be taken to the 'perfumes' page.
 
 ![Delete perfume](media/Delete-perfume-01.JPG)
+
 
 - **Messages**
 
@@ -235,20 +234,15 @@ Store owners/admins can administer the site from the user interface, they have t
 
 ![Messages](media/messages-01.JPG)
 
-- **404/500 Custom Pages**
+- **404 Custom Pages**
 
   - The 404 custom error pages show said errors in a user friendly way.
   - The custom pages allow the user to avail of the navbar and footer present in all the other pages, making it easier for the user to go anywhere they want in the site after getting the error.
 
 ![404](media/404page-01.JPG)
 
-- **Modals**
 
-  - Privacy Policy and Terms & Conditions were included in modals.
-  - A Bootstrap 4 scrolling long content modal was used for Terms & Conditions and Privacy Policy given the large content.
-  - The [Privacy Policy Generator](https://www.termsfeed.com/privacy-policy-generator/) was used to created the privacy policy.
 
-![Modals](documentation/modals.png)
 
 - **Back to Top Button**
 
@@ -260,7 +254,8 @@ Store owners/admins can administer the site from the user interface, they have t
 - **Footer**
 
   - The footer the same as the navbar, is identical across the site.
-  - The footer contains several links. Links to social media such as Facebook, Instagram, YouTube and Twitter which open in a different tab. It also contains links to Privacy Policy and Terms & Conditions. Also links to the about us and contact us pages.
+  - The footer contains several links. Links to social media such as Facebook, Instagram, and Twitter which open in a different tab. It also contains links to Privacy Policy and Terms & Conditions. Also links to the about us and contact us pages.
+ 
 
 ![Footer](media/footer-01.jpg)
 
@@ -276,6 +271,9 @@ Store owners/admins can administer the site from the user interface, they have t
   - Implement the use of webhooks during the checkout process.
 - Add view logic in add_perfume view to send emails to Newsletter subscribers every time a new perfume is added to the store.
 
+  
+
+ 
 ## Tools & Technologies Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
@@ -298,14 +296,16 @@ Store owners/admins can administer the site from the user interface, they have t
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static and media file storage.
 
+
 ## Agile Development Process
 
 ### GitHub Projects
 
-[GitHub Projects](https://github.com/leonardo-simeone/perfumesground-store/projects?query=is%3Aclosed) served as an Agile tool for this project.
+[GitHub Projects](https://github.com/Melhefnawi/Perfume-palace/projects?query=is%3Aopen) served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+
 
 ### GitHub Issues
 
@@ -318,6 +318,8 @@ It also helped with milestone iterations on a weekly basis.
 
 ![screenshot](media/issues-01.JPG)
 
+
+
 ### MoSCoW Prioritization
 
 I've decomposed my issues into stories prior to prioritizing and implementing them.
@@ -326,6 +328,7 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - **Must Have**: guaranteed to be delivered (_max 60% of stories_)
 - **Should Have**: adds significant value, but not vital (_the rest ~20% of stories_)
 - **Could Have**: has small impact if left out (_20% of stories_)
+
 
 ## Ecommerce Business Model
 
@@ -352,6 +355,11 @@ This included a series of the following keyword types
 
 - Short-tail (head terms) keywords
 - Long-tail keywords
+
+
+
+
+
 
 #### Final AWS Setup
 
@@ -415,6 +423,7 @@ Deployment steps are as follows, after account setup:
 - Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
 - From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
 
+
 ### Local VS Deployment
 
 The only difference I found between local version and heroku deployment, was the verification emails. When Sign up or Order completed processes ocurred, the verification emails were not sent in the real world but to the developement terminal instead, whereas in the deployed version emails were sent to the actual emails provided by the user.
@@ -423,9 +432,9 @@ The only difference I found between local version and heroku deployment, was the
 
 ### Content
 
-| Source                                                                                       | Location                             | Notes                                                                                                                                           |
-| -------------------------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
-| [Markdown Builder](https://traveltimn.github.io/markdown-builder)                            | README and TESTING                   | Tool to help generate the Markdown files                                                                                                        |
-| [Fontawesome](https://fontawesome.com/search?o=r&m=free)                                     | Social Media Links & Across the Site | Icons                                                                                                                                           |     |
-| [Mdbootstrap.com](https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#js-tab-view) | entire site                          | Back to top button, used and adapted to my needs                                                                                                |     |     |
-| [Boutique Ado Code Institute Project](https://boutique-ado-leo.herokuapp.com/)               | entire site                          | 'Code Institute walkthrough project to build a fully functional e-commerce site', used several parts of the walkthrough and adapted to my needs |     |
+| Source                                                                                                                                                                  | Location                             | Notes                                                                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Markdown Builder](https://traveltimn.github.io/markdown-builder)                                                                                                       | README and TESTING                   | Tool to help generate the Markdown files                                                                                                                     |
+| [Fontawesome](https://fontawesome.com/search?o=r&m=free)                                                                                                                | Social Media Links & Across the Site | Icons                                                                                                                                                        |                     |
+| [Mdbootstrap.com](https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#js-tab-view)                                                                            | entire site                          | Back to top button, used and adapted to my needs                                                                                                             |                                                                                                                              |                                                        |
+| [Boutique Ado Code Institute Project](https://boutique-ado-leo.herokuapp.com/)                                                                                          | entire site                          | 'Code Institute walkthrough project to build a fully functional e-commerce site', used several parts of the walkthrough and adapted to my needs              |                                                                          |
