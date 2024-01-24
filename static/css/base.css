@@ -355,8 +355,6 @@ input[name='q']::placeholder {
     width:80%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
@@ -452,7 +450,7 @@ ul {
 
 #mc_embed_signup {
     background: black;
-    clear: right;
+    clear: righth
     font: 14px Helvetica, Arial, sans-serif;
     width: 3400px;
 }
