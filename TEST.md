@@ -91,45 +91,26 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on Cancel link in Logout page | Redirection to Home page | Pass | |
 | | Search bar display in every page and functionality | Search bar is displayed in every page as expected and functionality works as expected | Pass | When the search bar is clicked on but no characters (no query) is input in it and enter is pressed or the magnifying glass icon is clicked or tapped on, an error message will be generated, indicating the user to do so in order to search |
 | About Us Page | | | | |
-| | Click on About Us link in navbar | Redirection to About Us page | Pass | |
 | | Click on About Us link in footer | Redirection to About Us page | Pass | |
-| | Click on About Us page external links | External links open in new page | Pass |
-| | Click on the Cancel link in the Contact us page | Redirection to All perfumes page showing all perfumes for all Brands | Pass | |
 | | Click on the Cancel link in the Newsletter page | Redirection to All perfumes page showing all perfumes for all Brands | Pass | |
 | | Click on the Cancel link in the Add perfume (perfume management) page | Redirection to All perfumes page showing all perfumes for all Brands | Pass | |
 | | Click on the Cancel link in the Edit perfume (perfume management) page | Redirection to All perfumes page showing all perfumes for all Brands | Pass | |
-| | Click on the Cancel link in the Delete perfume (perfume management) page | Redirection to All perfumes page showing all perfumes for all Brands | Pass | |
 | | Click on the Keep shopping link in the perfume detail page | Redirection to All perfumes page showing all perfumes for all Brands | Pass | |
 | | Click on the Keep shopping link in the Basket page | Redirection to All perfumes page showing all perfumes for all Brands | Pass | |
 | | Click on a specific perfume card in the perfumes page | Redirection to the corresponding specific perfume detail page | Pass | |
-| | Load images, names, prices, Brands and likes count for perfumes | All info is loaded as expected | Pass | |
+| | Load images, names, prices, and rating for perfumes | All info is loaded as expected | Pass | |
 | | Free delivery offer banner display | Free delivery offer banner is displayed as expected | Pass | |
 | | Sort by bar display and functionality | Sort by bar is displayed as expected and functionality works as expected | Pass | |
 | | Logged in as Superuser | Edit and Delete buttons will show | Pass | |
 | perfume Detail Page | | | | |
-| | Load image, name, price, quantity, platform, pegi rating, genre, year, likes count, available in other Brands, description and trailer for perfume | All info is loaded as expected | Pass | |
+| | Load image, name, price, quantity, platform, rating, available in other Brands, description and trailer for perfume | All info is loaded as expected | Pass | |
 | | Click on the custom quantity buttons or the built in ones in the form, will adjust the perfume quantity that will be added to the basket | All quantity buttons work as expected | Pass | |
 | | Click on Add to basket button | Effectively adds the perfume(quantity) to the shopping basket | Pass | A message will show at the top of the page to indicate the user they've added the perfume to the basket successfully |
-| | Click on platform button | Redirection to perfumes page showing the perfumes of that particular platform | Pass | |
-| | Click on pegi button | Redirection to perfumes page showing the perfumes of that particular pegi | Pass | |
-| | Click on genre button | Redirection to perfumes page showing the perfumes of that particular genre | Pass | |
-| | Click on like button | Should the user not be logged in, the like button will be disabled, once they login they will be able to click on the like button to like/unlike the perfume | Pass | A message will show at the top of the page to indicate the user they've liked/unliked the perfume successfully |
-| | perfume trailer will not autoplay | When the perfume detail page is loaded, the perfume trailer will load but it will not autoplay, the user can play it should they choose to | Pass | |
 | | Logged in as Superuser | Edit and Delete buttons will show | Pass | |
 | Contact Us Page | | | | |
-| | Click on Contact Us link in navbar | Redirection to Contact Us page | Pass | |
-| | Click on Contact Us link in home page bottom | Redirection to Contact Us page | Pass | |
 | | Click on Contact Us link in footer | Redirection to Contact Us page | Pass | |
 | | Click on any of the Contact Us links in privacy policy modal | Redirection to Contact Us page | Pass | |
-| | Click on Contact Us link in Password reset page | Redirection to Contact Us page | Pass | |
-| | Contact Us page will load a contact form for the user to fill out | Contact us form, loads as expected | Pass | Should the user be logged in, the full name and email address fields in the form will be prefilled with the user's information |
-| | Click on the Send button without requiered form values | An error will show on the form to indicate the user what's missing | Pass | |
-| | Click on the Send button | Sends the user's info including message, to the Contact database table | Pass | A message will show at the top of the page to thank the user for contacting the store |
-| Contact List Page | | | | |
-| | Click on Contact list link in navbar | Redirection to Contact list page | Pass | |
-| | Display Contact list | All users and their information (including messages) that have contacted the site admin will be displayed | Pass | |
-| | Brute forcing the URL to get to Contact list page without logging in first | User will be redirected to Login page | Pass | |
-| | Brute forcing the URL to get to Contact list page logged in not as a Superuser | User will be redirected to Home page and an error will show at the top of the page to indicate the user that only store owners can do that | Pass | If user is not logged in, they will be redirected to login page |
+
 | Register | | | | |
 | | Click on Register link in navbar, | Redirection to Register page | Pass | |
 | | Enter valid first name | Field will accept free text format | Pass | |
@@ -169,8 +150,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Brute forcing the URL to get to Edit perfume page without logging in first | User will be redirected to Login page | Pass | |
 | | Brute forcing the URL to get to Edit perfume page logged in not as a Superuser | User will be redirected to Home page and an error will show at the top of the page to indicate the user that only store owners can do that | Pass | |
 | Delete perfume Page | | | | |
-| | Click on Delete button for a perfume in perfumes page | Redirection to Delete perfume page | Pass | A confirmation text will be displayed on screen asking the user if they're sure they want to delete the perfume |
-| | Click on Delete button for a perfume in perfume detail page | Redirection to Delete perfume page | Pass | A confirmation text will be displayed on screen asking the user if they're sure they want to delete the perfume |
+| | Click on Delete button for a perfume in perfumes page |  Delete perfume  | Pass | A confirmation text will be displayed on screen confirm the delete of the perfume |
 | | Click on Delete perfume button | Existing perfume will be deleted and user redirected to perfumes page | Pass | A message will show at the top of the page to indicate the user they've deleted the perfume successfully |
 | | Brute forcing the URL to get to Delete perfume page without logging in first | User will be redirected to Login page | Pass | |
 | | Brute forcing the URL to get to Delete perfume page logged in not as a Superuser | User will be redirected to Home page and an error will show at the top of the page to indicate the user that only store owners can do that | Pass | |
@@ -213,45 +193,35 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a site user, I would like to register for an account, so that I can  login and out with personal account and recover my password in case I forget it. | |
-| As a site user, I would like to view a list of perfumes, so that I can select one or more to purchase. |  |
-| As a site user, I would like to view an individual perfume, so that I can identify its name, price, image, genre, description, year, platform, pegi rating, trailer video and likes count. |  |
-| As a site user, I would like to search for a specific perfume name or genre, so that I can easily find the perfume I want to purchase. |  |
-| As a site user, I would like to sort perfumes by price, genre, name, pegi rating and popularity, so that I can easily find the perfumes according to my preferences. | |
-| As a site user, I would like to add, view, update and delete perfumes in the shopping basket, so that I can manage/review my shopping basket before proceeding to checkout. |  |
-| As a site user, I would like to provide the necessary billing/delivery details, so that I can purchase perfumes and view an order confirmation after checkout to verify all the information from my purchase is accurate. |  |
-| As a site user, I would like to receive an email confirmation after my purchase, so that I can keep records of my transactions. |  |
-| As a site user, I would like to create/manage my personal account profile, so that I can view/update my profile, view my order history and save my payment information. |  |
-| As a site user, I would like to contact the site administrator, so that I can query/recommend the site admin on different topics. |  |
-| As a site user, I would like to subscribe to a newsletter, so that I can receive news, special offers and general information related to the store. |  |
-| As a site user, I would like to navigate to the site's about us, terms & conditions and privacy policy links, so that I can inform myself in more depth about the site. |  |
-| As a site administrator, I should be able to create/add, read, update and delete perfumes, so that I can manage the perfumes on the site. |  |
-| As a site administrator, I should be able to add, update and delete pegi ratings, so that I can assign pegi ratings to perfumes. |  |
-| As a site administrator, I should be able to add, update and delete Brands, so that I can assign Brands to perfumes. |  |
-| As a store owner, I should be able to add/edit/delete perfumes from the website, so that I can manage new perfumes, perfumes updates or perfumes that are no longer available. |  |
-| As a product owner, I would like to run automated tests, so that I can make sure everything is working as it should. |  |
-
-
+| As a site user, I would like to register for an account, so that I can  login and out with personal account and recover my password in case I forget it. | Done |
+| As a site user, I would like to view a list of perfumes, so that I can select one or more to purchase. | Done |
+| As a site user, I would like to view an individual perfume, so that I can identify its name, price, image, genre, description, year, platform, pegi rating, trailer video and likes count. | Done |
+| As a site user, I would like to search for a specific perfume name or genre, so that I can easily find the perfume I want to purchase. | Done |
+| As a site user, I would like to sort perfumes by price, genre, name, pegi rating and popularity, so that I can easily find the perfumes according to my preferences. | Done |
+| As a site user, I would like to add, view, update and delete perfumes in the shopping basket, so that I can manage/review my shopping basket before proceeding to checkout. | Done |
+| As a site user, I would like to provide the necessary billing/delivery details, so that I can purchase perfumes and view an order confirmation after checkout to verify all the information from my purchase is accurate. | Done |
+| As a site user, I would like to receive an email confirmation after my purchase, so that I can keep records of my transactions. | Done |
+| As a site user, I would like to create/manage my personal account profile, so that I can view/update my profile, view my order history and save my payment information. | Done |
+| As a site user, I would like to contact the site administrator, so that I can query/recommend the site admin on different topics. | Done |
+| As a site user, I would like to subscribe to a newsletter, so that I can receive news, special offers and general information related to the store. | Done |
+| As a site user, I would like to navigate to the site's about us, terms & conditions and privacy policy links, so that I can inform myself in more depth about the site. | Done |
+| As a site administrator, I should be able to create/add, read, update and delete perfumes, so that I can manage the perfumes on the site. | Done |
+| As a site administrator, I should be able to add, update and delete Brands, so that I can assign Brands to perfumes. | Done |
+| As a store owner, I should be able to add/edit/delete perfumes from the website, so that I can manage new perfumes, perfumes updates or perfumes that are no longer available. | Done |
 
 
 ## Bugs
 
 | Language/Bug | To fix bug | Before Screenshot | After Screenshot |
 | --- | --- | --- | --- |
-| Python - Failed to sort by likes count. | Given that total_likes() is a method of the perfume model to totalize the likes, I couldn't access it directly while trying to sort perfumes by likes count, instead I created (annotated) a temporary field called 'num_likes' to achieve the functionality. Kudos to the Code Institute tutor support team. |  |
-| Django - Video not showing due to unsecure HTTP. | I researched 'why is Django embed video http unsecure' and I came across the solution . I realized that in order for the video to load using HTTPS, I had to add these variables to my settings. |  |
-| Django - Unauthorized access to checkout success page. | One of the ways I tried to implement this restriction was to check for the user's full_name attached to the order as seen in the 'After Screenshot', but it didn't work because while trying to implement the appropriate restriction for this view, I found myself not allowing Anonymous user to complete purchases, which is why I reverted back to the way it was originally. I realized later that users need access to this view only after finishing the checkout process, so I created a variable 'checkout_completed' in the checkout view that had to be satisfied (True) in checkout_success for the user to have access to the checkout_success view, meaning that users anonymous or registered, that try to force their way to checkout_success will be restricted, they will be redirected to basket page and an error indicating the user that they can only access this page after completing a purchase will show. If users anonymous or registered access the checkout_success view via checkout (completing a purchase) they will be able to do so without issues. |  |
-| Django - Unauthorized access to order history page. | I used a conditional in the order_history view to check if the user requesting the order history was in fact the order owner, if they don't match, then an error indicating to the user that they don't have permission to view this order history will be shown and they will be redirected to home page. | |
-| Python - `E501 line too long` (90 > 79 characters). | This error replicated along all my python files. To fix it, I followed my mentor's suggestion which was to press enter right after the first bracket so I dind't have to 'guess' where the proper indentantion was. ||
-| HTML - `Tap targets are not sized appropriately`. | While testing the application with Chrome lighthouse, I encountered this issue. To resolve it, I increased the size of the checkboxes for small screens. | |
-| HTML - `iframe or iframes do not have a title`. | While testing the application with Chrome lighthouse, I encountered this issue. Since the iframes are loaded dynamically and I couldn't add the titles directly in HTML, to resolve it, I used JavaScript at the end of the page to get the iframe element and set the title attribute as the perfume name. | |
-| HTML - `elements contain focusable descendents`. | While testing the application with Chrome lighthouse, I encountered this issue. Since the input is loaded dynamically and I couldn't add the 'tabindex=-1' attribute in HTML to make it non focusable, to resolve it, I used JavaScript at the end of the page to get the input element and set the tabindex attribute to -1. |  |
-| GitHub - `Duplicate commit message`. | In commit message number , I meant to commit 'Create database design section in readme' but I made a mistake and duplicated the previous commit message 'Create tools & technologies section in readme'. I looked up 'how to amend a pushed commit message' but since it's not recommended given it could cause issues with commit history, I decided to leave it as it is. | ![Before](documentation/duplicated-commit-message.png) | ![After](documentation/duplicated-commit-message.png) |
+| Python - Failed to sort by brand name. | had to update the view in the product app to seach by the brand and during these steps, another bug appears that i had to split the get method, to be able to sort with the brand name.  | Fixed |
+| Django - giving 500 error while deploying in Heroku. | I had to update the settings with the correct variables to initiate the gmail and the stripe, and avoid the 500 error | Done |
+| Django - undeployed migrations. | after importing the country field to the model, there was a migrations problem that cease the whole migration process, after contacting the tutor support, i had to delete all the migrations and rebuild the checkout model and deploy my migration once again. | Fixed |
+
+| Python - `E501 line too long` (90 > 79 characters). | This error replicated along all my python files. To fix it, I followed my mentor's suggestion which was to press enter right after the first bracket so I didn't have to 'guess' where the proper indentantion was. | Fixed |
 
 ## Unfixed Bugs
 
-- Github `Duplicate commit message` in commit message number [17116e8](https://github.com/leonardo-simeone/perfumesground-store/commit/17116e8bb3a989c1f5a7bea6755cfc1456eecce3).
+-  `Email confirmation` 
 
-    ![screenshot](documentation/duplicated-commit-message.png)
-
-  - Attempted fix: As stated in Bugs section, I looked up 'how to amend a pushed commit message' but since it's not recommended given it could cause issues with commit history, I decided to leave it as it is.
+  - Attempted fix: I tried to register from heroku and the project but wasn't able to get a confirmation email. I had to confirm the email by copying the confirmation link and paste it in the url, to be directed to the confirm email page and confirm email. 
