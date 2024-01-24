@@ -77,7 +77,19 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
+#### Desktop view
 
+Works as expected
+
+ ![screenshot](media/lpad-view-01.JPG)
+
+#### Mobile view
+
+ Works as expected
+ 
+ ![screenshot](media/lpad-view-01.JPG)
+
+ 
 ## Defensive Programming
 
 Defensive programming was manually tested with the below user acceptance testing:
