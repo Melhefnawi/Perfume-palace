@@ -433,7 +433,7 @@ ul {
 }
 
 .footer-col .social-links a {
-    display: inline-block;
+    display: inlne-block;
     height: 40px;
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -452,9 +452,9 @@ ul {
 
 #mc_embed_signup {
     background: black;
-    clear: rigth;
+    clear: right;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 400px;
+    width: 3400px;
 }
 
 /*responsive*/
