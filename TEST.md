@@ -122,7 +122,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | Contact Us Page | | | | |
 | | Click on Contact Us link in footer | Redirection to Contact Us page | Pass | |
 | | Click on any of the Contact Us links in privacy policy modal | Redirection to Contact Us page | Pass | |
-
 | Register | | | | |
 | | Click on Register link in navbar, | Redirection to Register page | Pass | |
 | | Enter valid first name | Field will accept free text format | Pass | |
