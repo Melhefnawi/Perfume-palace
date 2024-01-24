@@ -81,13 +81,13 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Works as expected
 
- ![screenshot](media/lpad-view-01.JPG)
+ ![screenshot](media/lighthouse-desktop-view.JPG)
 
 #### Mobile view
 
  Works as expected
  
- ![screenshot](media/lpad-view-01.JPG)
+ ![screenshot](media/lighthouse-mobile-view.JPG)
 
  
 ## Defensive Programming
