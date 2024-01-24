@@ -223,8 +223,8 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## Bugs
 
-| Language/Bug | To fix bug | Status | 
-| --- | --- | --- | --- |
+| Language/Bug | To fix bug | Status |
+| --- | --- | --- |
 | Python - Failed to sort by brand name. | had to update the view in the product app to seach by the brand and during these steps, another bug appears that i had to split the get method, to be able to sort with the brand name.  | Fixed |
 | Django - giving 500 error while deploying in Heroku. | I had to update the settings with the correct variables to initiate the gmail and the stripe, and avoid the 500 error | Fixed |
 | Django - undeployed migrations. | after importing the country field to the model, there was a migrations problem that cease the whole migration process, after contacting the tutor support, i had to delete all the migrations and rebuild the checkout model and deploy my migration once again. | Fixed |
