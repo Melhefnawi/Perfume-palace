@@ -202,7 +202,7 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-| User Story | Screenshot |
+| User Story | Comment |
 | --- | --- |
 | As a site user, I would like to register for an account, so that I can  login and out with personal account and recover my password in case I forget it. | Done |
 | As a site user, I would like to view a list of perfumes, so that I can select one or more to purchase. | Done |
@@ -223,10 +223,10 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## Bugs
 
-| Language/Bug | To fix bug | Before Screenshot | After Screenshot |
+| Language/Bug | To fix bug | Status | 
 | --- | --- | --- | --- |
 | Python - Failed to sort by brand name. | had to update the view in the product app to seach by the brand and during these steps, another bug appears that i had to split the get method, to be able to sort with the brand name.  | Fixed |
-| Django - giving 500 error while deploying in Heroku. | I had to update the settings with the correct variables to initiate the gmail and the stripe, and avoid the 500 error | Done |
+| Django - giving 500 error while deploying in Heroku. | I had to update the settings with the correct variables to initiate the gmail and the stripe, and avoid the 500 error | Fixed |
 | Django - undeployed migrations. | after importing the country field to the model, there was a migrations problem that cease the whole migration process, after contacting the tutor support, i had to delete all the migrations and rebuild the checkout model and deploy my migration once again. | Fixed |
 
 | Python - `E501 line too long` (90 > 79 characters). | This error replicated along all my python files. To fix it, I followed my mentor's suggestion which was to press enter right after the first bracket so I didn't have to 'guess' where the proper indentantion was. | Fixed |
