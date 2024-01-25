@@ -7,8 +7,8 @@ from .models import Comment
 
 class CommentAdmin(admin.ModelAdmin):
 
-    list_display = ('name', 'email', 'body', 'created_on',
-                    'approved', )
+    list_display = ('name', 'email', 'body', 'created_on',)
+                     
     ordering = ('name',)
 
 

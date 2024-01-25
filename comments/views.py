@@ -16,7 +16,7 @@ def add_comment(request):
         if form.is_valid():
             comment = form.save()
             messages.success(request, 'Successfully added your comment!')
-            return redirect(reverse('product_detail'))
+            return redirect(reverse('home'))
         else:
             messages.error(request, 'Failed to add your comment form is unvalid.')
     else:
