@@ -8,7 +8,7 @@ from .forms import CommentForm
 def add_comment(request):
     """ Add a comments to the store """
     if not request.user.is_authenticated:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only authenticated can do that.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
