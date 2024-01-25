@@ -129,6 +129,15 @@ Store owners/admins can administer the site from the user interface, they have t
   
   ![Logout](media/product-details-01.JPG)
 
+  - **Add comments**
+
+  - The add comment page give the user the ability to write his comments about the site.
+  - At the top of the screen the free delivery banner is displayed again the same as in the home page.
+  - Next we find on the left of the screen comments section and underneath the add comment form, where the user can add his comment and his advice to the site ower to improve or add their new facilities to site to improve its quality.
+  
+  ![Logout](media/add_comment_page.JPG)
+
+
 - **Shooping basket**
 
   - The shopping basket page is where the user will put all the perfumes they want to purchase before proceeding with the checkout process.
