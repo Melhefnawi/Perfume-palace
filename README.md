@@ -129,7 +129,7 @@ Store owners/admins can administer the site from the user interface, they have t
   
   ![Logout](media/product-details-01.JPG)
 
-  - **Add comments**
+- **Add comments**
 
   - The add comment page give the user the ability to write his comments about the site.
   - At the top of the screen the free delivery banner is displayed again the same as in the home page.
