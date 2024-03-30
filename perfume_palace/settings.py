@@ -29,11 +29,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-                 "localhost", 'perfumepalace-85931537055e.herokuapp.com','8000-melhefnawi-perfumepalac-y5mr22flx07.ws-eu110.gitpod.io']
+                 "localhost", 'perfumepalace-85931537055e.herokuapp.com','8000-melhefnawi-perfumepalac-qk90vlr543l.ws-eu110.gitpod.io']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
