@@ -105,10 +105,23 @@
       </div>
     </li>
     <li class="nav-item dropdown">
-        <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'add_comment' %}" 
-            aria-haspopup="true" aria-expanded="false" rel="noopener">
-            Comments
-        </a>
+      <a
+        class="logo-font font-weight-bold nav-link text-black"
+        href="#"
+        id="specials-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        rel="noopener"
+      >
+        Share ideas
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+        <a href="{% url 'add_comment' %}" class="dropdown-item" rel="noopener">Add comment</a>
+        <a href="{% url 'create_review' %}" class="dropdown-item" rel="noopener">Add review</a>
+        <a href="{% url 'create_review' %}" class="dropdown-item" rel="noopener">Add wishlist</a>
+        
+      </div>
     </li>
   </ul>
 </div>

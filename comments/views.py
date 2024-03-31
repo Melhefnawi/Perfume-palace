@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import CommentForm
+from .models import Review
+from .forms import ReviewForm
 
 
 @login_required
@@ -30,6 +32,22 @@ def add_comment(request):
     return render(request, template, context)
 
 
+@login_required
+def review_detail(request, review_id):
+    review = get_object_or_404(Review, pk=review_id)
+    return render(request, 'review_detail.html', {'review': review})
 
-
+@login_required
+def create_review(request):
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.reviewer = request.user
+            review.save()
+            messages.success(request, 'Successfully added your review!')
+            return redirect(reverse('home'))
+    else:
+        form = ReviewForm()
+    return render(request, 'review/create_review.html', {'form': form})
 
