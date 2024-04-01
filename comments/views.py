@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import CommentForm
 from .models import Review
 from .forms import ReviewForm
+from .forms import ContactForm
 
 
 @login_required
@@ -50,4 +51,15 @@ def create_review(request):
     else:
         form = ReviewForm()
     return render(request, 'review/create_review.html', {'form': form})
+
+def contact_us(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully sent your request!')
+            return redirect('home')  # Redirect to a success page
+    else:
+        form = ContactForm()
+    return render(request, 'contact/contact_us.html', {'form': form})
 
