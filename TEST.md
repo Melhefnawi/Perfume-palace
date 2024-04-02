@@ -11,7 +11,7 @@ In this section I ran validation for all the code I produced in the project. I f
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 ![screenshot](media/base-html-test.JPG)
 
-only one error appears as it shown in the above image, tried to fix it but couldn't find the location of the error in the code. moved all the charset in the meta at the top of the base template but still having the error. 
+ 
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
@@ -230,8 +230,10 @@ Defensive programming was manually tested with the below user acceptance testing
 | Django - undeployed migrations. | after importing the country field to the model, there was a migrations problem that cease the whole migration process, after contacting the tutor support, i had to delete all the migrations and rebuild the checkout model and deploy my migration once again. | Fixed |
 | Python - `E501 line too long` (90 > 79 characters). | This error replicated along all my python files. To fix it, I followed my mentor's suggestion which was to press enter right after the first bracket so I didn't have to 'guess' where the proper indentantion was. | Fixed |
 
-## Unfixed Bugs
+## fixed Bugs
 
 -  `Email confirmation` 
 
   - Attempted fix: I tried to register from heroku and the project but wasn't able to get a confirmation email. I had to confirm the email by copying the confirmation link and paste it in the url, to be directed to the confirm email page and confirm email. 
+
+  - after I have failed in my first submission project attempt project - I started to contact the student support and they gave me the steps to correctly setup my email confirmation and the purchase confirmation email, i had to change the python version, update the env file, update the stripe webhook and adding more endpoints at the stripe webhook site, at the end and after testing everything is working as expected.
