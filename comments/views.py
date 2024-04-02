@@ -58,7 +58,7 @@ def contact_us(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully sent your request!')
-            return redirect('home')  # Redirect to a success page
+            return redirect('home')  
     else:
         form = ContactForm()
     return render(request, 'contact/contact_us.html', {'form': form})
