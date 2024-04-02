@@ -236,4 +236,4 @@ Defensive programming was manually tested with the below user acceptance testing
 
   - Attempted fix: I tried to register from heroku and the project but wasn't able to get a confirmation email. I had to confirm the email by copying the confirmation link and paste it in the url, to be directed to the confirm email page and confirm email. 
 
-  - after I have failed in my first submission project attempt project - I started to contact the student support and they gave me the steps to correctly setup my email confirmation and the purchase confirmation email, i had to change the python version, update the env file, update the stripe webhook and adding more endpoints at the stripe webhook site, at the end and after testing everything is working as expected.
+  - after I have failed in my first submission project attempt - I started to contact the student support and they gave me the steps to correctly setup my email confirmation and the purchase confirmation email, i had to change the python version, update the env file, update the stripe webhook and adding more endpoints at the stripe webhook site, at the end and after testing everything is working as expected.
