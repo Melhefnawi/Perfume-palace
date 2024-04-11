@@ -5,6 +5,7 @@ from .forms import CommentForm
 from .models import Review
 from .forms import ReviewForm
 from .forms import ContactForm
+from products.models import Product, Category
 
 
 @login_required
@@ -52,6 +53,7 @@ def create_review(request):
         form = ReviewForm()
     return render(request, 'review/create_review.html', {'form': form})
 
+@login_required
 def contact_us(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -62,4 +64,40 @@ def contact_us(request):
     else:
         form = ContactForm()
     return render(request, 'contact/contact_us.html', {'form': form})
+
+@login_required
+def show_review(request):
+
+    products = Product.objects.all()
+
+    context = {
+        'products': products,
+    }
+
+
+    return render(request, 'show_review/show_rev.html', context)
+
+
+@login_required
+def review_details(request, product_id):
+
+    product = get_object_or_404(Product, pk=product_id)
+    review_exists = Review.objects.filter(item=product).exists()
+
+    if review_exists:
+
+        review = Review.objects.filter(item=product)
+
+        context = {
+            'product': product,
+            'review': review,
+        }
+    else:
+
+        context = {
+            'product': product,
+        }
+
+
+    return render(request, 'show_review/rev_details.html', context)
 
