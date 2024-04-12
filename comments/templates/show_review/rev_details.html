@@ -85,13 +85,12 @@
                             </div>
                         </div>
                         {% for rev in review %}
-                        <div class="card w-20">
+                        <div class="card border-light mb-3" style="max-width: 30rem;">
+                            <div class="card-header">Header</div>
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">{{ rev.comment}}</p>
-                              <a href="#" class="btn btn-primary">Button</a>
-                            </div>
-                          </div>
+                              <h5 class="card-title">Light card title</h5>
+                              <p class="card-text">{{ rev.comment }}</div>
+                        </div>
                         {% endfor %}
                         {% endwith %}
                     </div>
