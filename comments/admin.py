@@ -17,7 +17,7 @@ admin.site.register(Comment, CommentAdmin)
 
 class ReviewAdmin(admin.ModelAdmin):
 
-    list_display = ('reviewer', 'item', 'rating', 'comment', 'created_at',)
+    list_display = ('reviewer', 'item', 'rating', 'comment', 'created_at','reviews_count',)
                      
     ordering = ('reviewer',)
 

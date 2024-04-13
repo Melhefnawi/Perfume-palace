@@ -50,10 +50,10 @@
                             
                         </div>
                         {% for rev in review %}
-                        <div class="card border-light mb-3" style="max-width: 30rem;">
-                            <div class="card-header">Header</div>
+                        <div class="card border-light text-white bg-secondary mb-3" style="max-width: 30rem;">
+                            <div class="card-header">Product Review</div>
                             <div class="card-body">
-                              <h5 class="card-title">{{rev.reviewer}}</h5>
+                              <h5 class="card-title">User Name: {{rev.reviewer}}</h5>
                               <p class="card-text">{{ rev.comment }}</div>
                         </div>
                         {% endfor %}

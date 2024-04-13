@@ -69,9 +69,12 @@ def contact_us(request):
 def show_review(request):
 
     products = Product.objects.all()
+    reviews = Review.objects.all()
 
     context = {
         'products': products,
+        'reviews' : reviews,
+        
     }
 
 
