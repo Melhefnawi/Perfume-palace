@@ -52,6 +52,7 @@ def create_review(request):
     else:
         form = ReviewForm()
     return render(request, 'review/create_review.html', {'form': form})
+    
 
 @login_required
 def contact_us(request):
@@ -67,16 +68,16 @@ def contact_us(request):
 
 @login_required
 def show_review(request):
-
     products = Product.objects.all()
-    reviews = Review.objects.all()
-
+    for product in products:
+       reviews = Review.objects.filter(item=product)
+       if reviews.count() > 0 :
+            product.reviews_count = reviews.count()
+            
     context = {
         'products': products,
-        'reviews' : reviews,
-        
+         
     }
-
 
     return render(request, 'show_review/show_rev.html', context)
 

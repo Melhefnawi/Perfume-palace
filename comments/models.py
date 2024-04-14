@@ -24,7 +24,7 @@ class Review(models.Model):
     rating = models.IntegerField()
     comment = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    reviews_count = models.IntegerField(null=True)
+    
 
     class Meta:
         ordering = ["created_at"]

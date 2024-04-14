@@ -33,7 +33,7 @@ DEBUG = True
 # DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-                 "localhost", 'perfumepalace-85931537055e.herokuapp.com', '8000-melhefnawi-perfumepalac-gntn2q0q4tj.ws-eu110.gitpod.io'   ]
+                 "localhost", 'perfumepalace-85931537055e.herokuapp.com', '8000-melhefnawi-perfumepalac-tot3kv9mqr7.ws-eu110.gitpod.io'   ]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
