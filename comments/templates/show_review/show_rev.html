@@ -84,7 +84,7 @@
                                     {% if product.reviews_count %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted" href="{% url 'review_details' product.id %}" rel="noopener">
-                                            <i class="fa-solid fa-star-sharp"></i><h5> {{ product.reviews_count}} Reviews</h5></i>
+                                            <i class="fa-solid fa-star-sharp"><h5> {{ product.reviews_count}} Reviews</h5></i>
                                         </a>
                                     </p>
                                     {% endif %}
